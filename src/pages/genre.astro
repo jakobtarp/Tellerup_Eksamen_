@@ -1,0 +1,66 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHeader from "../components/MainHeader.astro";
+
+import "../styles/global.css";
+import "../styles/tokens.css";
+---
+<MainLayout title="Genrer">
+<MainHeader title="Genrer" />
+<section class="genre-section">
+  <div class="genre-grid">
+    <div class="genre-box" style="background-color: var(--darkvanilla);"><a href="kategori.astro"><div>BØRNEBØGER</div></a></div>
+    <div class="genre-box" style="background-color: var(--vanilla);"><a href="kategori.astro"><div>KRIMI</div></a></div>
+    <div class="genre-box" style="background-color: var(--royalblue);"><a href="kategori.astro"><div class="white">ROMANTIK</div></a></div>
+    <div class="genre-box" style="background-color: var(--lighterblue);"><a href="kategori.astro"><div>SCI-FY</div></a></div>
+    <div class="genre-box" style="background-color: var(--royalblue);"><a href="kategori.astro"><div class="white">FANTASY</div></a></div>
+    <div class="genre-box" style="background-color: var(--lighterblue);"><a href="kategori.astro"><div>UNGDOMSROMANER</div></a></div>
+    <div class="genre-box" style="background-color: var(--vanilla);"><a href="kategori.astro"><div>YA-REALISME</div></a></div>
+    <div class="genre-box" style="background-color: var(--darkvanilla);"><a href="kategori.astro"><div>SKØNLITTERATUR</div></a></div>
+    <div class="genre-box" style="background-color: var(--lighterblue);"><a href="kategori.astro"><div>BIOGRAFIER</div></a></div>
+    <div class="genre-box" style="background-color: var(--royalblue);"><a href="kategori.astro"><div class="white">HOBBY</div></a></div>
+    <div class="genre-box" style="background-color: var(--darkvanilla);"><a href="kategori.astro"><div>ROMANTIK</div></a></div>
+    <div class="genre-box" style="background-color: var(--royalblue);"><a href="kategori.astro"><div class="white">SCI-FY</div></a></div>
+  </div>
+</section>
+</MainLayout>
+<style>
+  .genre-section {
+    text-align: center;
+  }
+  @media (min-width: 300px) {
+    .genre-section {
+      padding: 30px;
+    }
+  }
+  @media (min-width: 400px) {
+    .genre-section {
+      padding-block: 70px;
+    }
+  }
+  .genre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-gap: 20px; */
+    margin-top: 20px;
+  }
+  .genre-section .genre-box a {
+    font-weight: bold;
+  }
+  .genre-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    height: 150px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .genre-box:hover {
+    background-color: #333;
+    scale: 102%;
+  }
+  .white {
+    color: white;
+  }
+</style>

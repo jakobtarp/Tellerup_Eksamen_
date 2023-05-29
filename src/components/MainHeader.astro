@@ -1,0 +1,29 @@
+---
+const { title } = Astro.props;
+const { beskrivelse } = Astro.props;
+---
+
+<div class="headline">
+  <h1>{title}</h1>
+  <p>{beskrivelse}</p>
+</div>
+
+<style>
+  .headline {
+    background-color: var(--royalblue);
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    color: white;
+  }
+
+  h1 {
+    font-weight: var(--fontBold);
+    transform: translate(0, 180%);
+  }
+
+  .headline p {
+    font-weight: var(--fontNormal);
+    transform: translate(0, 240%);
+  }
+</style>

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Animation",
+    "description": "Learn the latest animation techniques to create stunning motion design and captivate your audience.",
+    "link": "/animation",
+    "iconName": "icon-1"
+  },
+  {
+    "title": "Design",
+    "description": "Create beautiful. usable interfaces to help shape the future of how the web looks.",
+    "link": "/design",
+    "iconName": "icon-2"
+  },
+  {
+    "title": "Photography",
+    "description": "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.",
+    "link": "/photography",
+    "iconName": "icon-3"
+  },
+  {
+    "title": "Crypto",
+    "description": "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.",
+    "link": "/crypto",
+    "iconName": "icon-4"
+  },
+  {
+    "title": "Business",
+    "description": "A step-by-step playbook to help you start, scale, and sustain your business without outside investment.",
+    "link": "/business",
+    "iconName": "icon-5"
+  }
+]

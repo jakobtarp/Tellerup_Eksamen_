@@ -1,0 +1,28 @@
+---
+const { header, description } = Astro.props;
+import Button from "./Button.astro";
+---
+
+<article class="grid gap-3 my-3 p-7 shadow-xl rounded-lg bg-gray-800 hover:bg-gray-700 cursor-pointer">
+  <div>
+    <slot />
+  </div>
+  <h3 class="text-white text-md">{header}</h3>
+  <p class="text-gray-500 text-sm">{description}</p>
+</article>
+
+<!-- 
+<style>
+  p {
+    color: var(--gray);
+  }
+
+  li {
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+</style> -->

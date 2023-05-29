@@ -1,0 +1,61 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHeader from "../components/MainHeader.astro";
+
+import "../styles/global.css";
+import "../styles/tokens.css";
+---
+
+<MainLayout title="profil">
+  <MainHeader title="Profil" />
+  <section class="profil-section">
+    <h2>Hej Stefan</h2>
+    <p>Hvad kan vi gøre for dig i dag?</p>
+    <div class="profil-grid">
+      <div class="profil-box cursor-pointer" style="background-color: var(--lighterblue);"><a href="profil.html"><h2>Mine ordrer</h2></a></div>
+      <div class="profil-box cursor-pointer" style="background-color: var(--darkvanilla);"><a href="profil.html"><h2>Mine bøger</h2></a></div>
+      <div class="profil-box cursor-pointer" style="background-color: var(--royalblue);"><a href="profil.html"><h2 id="white">Mine oplysninger</h2></a></div>
+    </div>
+  </section>
+  <div class="stroke"></div>
+</MainLayout>
+<style>
+  .profil-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: 400px) {
+    .profil-section {
+      padding: 70px;
+    }
+  }
+  .profil-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    height: 150px;
+    padding: 10px;
+  }
+  .profil-box:hover {
+    background-color: #333;
+    scale: 102%;
+  }
+  .profil-section h2 {
+    font-weight: bold;
+  }
+  .profil-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+  .stroke {
+    border: 0.3px solid black;
+    margin-inline: 20px;
+  }
+  #white {
+    color: white;
+  }
+</style>

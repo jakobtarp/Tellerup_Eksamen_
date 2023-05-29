@@ -1,0 +1,34 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Knapper</title>
+  </head>
+  <body>
+    <main class="px-5">
+      <h1>Knapper</h1>
+      <section class="pt-6">
+        <Button link="index.html" variant="primary" size="base" style="white">Læs mere</Button>
+        <Button link="index.html" variant="secondary" size="base" style="red">fortsæt med at handle</Button>
+        <Button link="index.html" variant="primary" size="base" style="white">Læs mere</Button>
+        <Button link="index.html" variant="secondary" size="base" style="red">fortsæt med at handle</Button>
+        <Button link="index.html" variant="tertiary" style="black">hej</Button>
+        <Button link="index.html" variant="tertiary" style="red">hej</Button>
+        <Button link="index.html" variant="ghost" style="green">hej</Button>
+        <Button link="index.html" variant="ghost" style="red">hej</Button>
+        <Button link="index.html" variant="tags" style="white" size="tags">hej</Button>
+      </section>
+    </main>
+  </body>
+</html>
+<style>
+  main {
+    background-color: yellow;
+  }
+</style>

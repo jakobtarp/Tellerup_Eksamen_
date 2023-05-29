@@ -1,0 +1,94 @@
+---
+import "../styles/tokens.css";
+import "../styles/base.css";
+import "../styles/global.css";
+const { titel, imgPath, imgPath1, imgPath2, imgPath3, imgPath4, imgPath5, imgPath6, imgPath7, imgPath8, forfatter, part, price, anmeldser, newBadge } = Astro.props;
+---
+
+<article class="mt-5 lg:w-[250px] lg:h-[470px] w-[167px] h-[260px] shaddowcard mx-auto mb-2 hover:scale-105 transition duration-300 cursor-pointer">
+  <a href="singleview.html">
+    <div class="grid imgcard relative">
+      {newBadge && <p class="badge absolute right-0 bottom-0 ">NYHED</p>}
+
+      <img class="imgradius mx-auto my-6 hidden lg:block" src={imgPath} alt="" height="250" width="170" />
+
+      <!-- Mobil billede -->
+      <img class="imgradius mx-auto lg:my-6 lg:hidden sm:block md:block" src={imgPath} alt="" height="134" width="90" />
+      <div class="format absolute rounded-r-lg mx-auto lg:bottom-20 bottom-6">
+        <img class="lg:w-9 w-6 p-1 mt-1" src={imgPath1} alt="" height="" width="" />
+        <img class="lg:w-9 w-6 p-1" src={imgPath2} alt="" height="" width="" />
+        <img class="lg:w-9 w-6 p-1 mb-1" src={imgPath3} alt="" height="" width="" />
+      </div>
+    </div>
+    <article class="lg:px-3 px-1 relative">
+      <h3 class="titel lg:mt-3">{titel}</h3>
+      <p class="forfatter lg:my-2">{forfatter}</p>
+      <p class="part">{part}</p>
+      <p class="price lg:my-3">{price}</p>
+      <div class="flex w-3 lg:w-4 absolute right-[60px] lg:right-20 lg:bottom-1">
+        <img src={imgPath4} alt="" />
+        <img src={imgPath5} alt="" />
+        <img src={imgPath6} alt="" />
+        <img src={imgPath7} alt="" />
+        <img src={imgPath8} alt="" />
+      </div>
+    </article>
+  </a>
+</article>
+
+<style>
+  .format {
+    background-color: var(--bluegrey);
+  }
+  .shaddowcard {
+    box-shadow: var(--box-shadow);
+  }
+  .imgcard {
+    border-top-left-radius: var(--globalBorderRadiusSm);
+    border-top-right-radius: var(--globalBorderRadiusSm);
+    background-color: var(--cardBg);
+  }
+  article {
+    border-radius: var(--cardBorderRadius);
+    box-shadow: var(--shadowDefault);
+    background-color: var(--cardBgColor);
+    font-family: var(--primary);
+  }
+
+  h3 {
+    font-size: var(--font-size-md);
+    font-weight: var(--fontSemibold);
+  }
+
+  .forfatter {
+    font-size: var(--font-size-sm);
+    font-weight: var(--fontNormal);
+    padding-left: var(--sm);
+  }
+
+  .part {
+    padding: 3px;
+    display: inline;
+    background-color: var(--bluegrey);
+    color: var(--white);
+    font-size: var(--font-size-xs);
+  }
+
+  .price {
+    font-size: var(--font-size-base);
+    font-weight: var(--fontSemibold);
+    padding-left: var(--sm);
+    color: var(--ctaColorRed);
+    line-height: var(--primaryLineHeight);
+  }
+
+  .badge {
+    color: var(--white);
+    font-size: var(--font-size-sm);
+    width: 100px;
+    background-color: var(--bluegrey);
+    font-weight: var(--fontBold);
+    text-align: center;
+    border-top-left-radius: var(--globalBorderRadiusSm);
+  }
+</style>

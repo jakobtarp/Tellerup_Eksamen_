@@ -1,0 +1,81 @@
+---
+import Button from "../components/Button.astro";
+
+const {img, title, author, format, delivery, price} = Astro.props;
+---
+
+<article>
+    <div>
+        <div class="imgContainer">
+            <a href="singleview.html">
+                <img src={img} alt="book">
+            </a>
+        </div>
+    </div>
+    <div class="text">
+        <h3>{title}</h3>
+        <h4>{author}</h4>
+        <h3>{format}</h3>
+        <h4>{delivery}</h4>
+    </div>
+    <slot />
+    <div class="right">
+        <h2>{price}</h2>
+        <Button link="kurv.html" variant="ghost" style="red">Slet</Button>
+    </div>
+</article>
+<style>
+     article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding-block: 50px;
+        padding-inline: 0px;
+    }
+    article img {
+        max-width: 150px;
+        height: auto;
+    }
+    .imgContainer {
+        max-width: 150px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    h3 {
+        font-weight: var(--fontSemibold);
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding-top: 43px;
+    }
+    /* .right :last-child {
+        flex: end;
+    } */
+@media (min-width: 550px) {
+    article {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    .imgContainer {
+        max-width: 150px;
+    }
+    .text {
+        text-align: start;
+    }
+    .right {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+    }
+}
+</style>

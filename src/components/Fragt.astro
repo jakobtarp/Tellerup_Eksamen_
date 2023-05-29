@@ -1,0 +1,45 @@
+---
+const { icon, title, text} = Astro.props;
+---
+
+<div class="container">
+   <div class="containerImg">
+        <img src={icon} alt="icon">
+    </div> 
+   <div class="text_container">
+        <h3>{title}</h3>
+        <p>{text}</p>
+   </div>
+</div>
+
+<style>
+.container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 220px;
+    height: 200px;
+    margin: 0;
+    gap: 12px;
+}.containerImg {
+    width: 100px;
+    margin: 0 auto;
+}
+.text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.text_container h3 {
+    font-weight: var(--fontBold);
+    text-align: center;
+}
+
+.text_container p {
+    text-align: center;
+}
+
+</style>

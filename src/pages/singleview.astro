@@ -1,0 +1,34 @@
+---
+import Button from "../components/Button.astro";
+import Singlepage from "../components/Singlepage.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Cart">
+  <section class="box">
+    <Singlepage
+      type="Roman"
+      title="Større end os"
+      img="public/single.webp"
+      forfattere="Christina Linde"
+      resume="Chaol og Nesryn er rejst til det sydlige kontinent med to mål for øje: At helbrede Chaolog bringe en styrke med tilbage.Det skal dog vise sig at blive sværere end forventet, for khaganen, det sydlige kontinents mægtige leder, er i sorg og ønsker ikke.."
+      pris_indbunden="299"
+      tidligere_pris_indbunden="499 DKK"
+      pris_ebog="199"
+      pris_lydbog="99"
+      resume_lang="Chaol og Nesryn er rejst til det sydlige kontinent med to mål for øje: At helbrede Chaolog bringe en styrke med tilbage.Det skal dog vise sig at blive sværere end forventet, for khaganen, det sydlige kontinents mægtige leder, er i sorg og ønsker ikke at træffe en beslutning her og nu.Da en healer bliver myrdet under mystiske omstændigheder, frygter Chaol og Nesrynat Valkerne er fulgt efter dem til syden."
+      forlag="Tellerup"
+      udgave="1"
+      EAN="9788758838632"
+      levering="1-2"
+    />
+  </section>
+</MainLayout>
+
+<style>
+  @media (min-width: 300px) {
+    .box {
+      padding-inline: 30px;
+    }
+  }
+</style>

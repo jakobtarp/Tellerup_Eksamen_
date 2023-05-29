@@ -1,0 +1,66 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<div>
+  <div class="headerGenre">
+    <h2>Gå på opdagelse</h2>
+    <Button link="genre.html" variant="tertiary" style="red">Se alle genrer</Button>
+  </div>
+
+  <div class="containerGenre">
+    <a href="kategori.html" class="box" style="background-color: var(--darkvanilla);"><h3>BØRNEBØGER</h3></a>
+    <a href="kategori.html" class="box" style="background-color: var(--vanilla)"><h3>KRIMI</h3></a>
+    <a href="kategori.html" class="box white" style="background-color: var(--royalblue)"><h3>ROMANTIK</h3></a>
+    <a href="kategori.html" class="box" style="background-color: var(--lighterblue)"><h3>UNGDOMSROMANER</h3></a>
+    <a href="kategori.html" class="box white" style="background-color: var(--royalblue)"><h3>SCI-FY</h3></a>
+    <a href="kategori.html" class="box" style="background-color: var(--darkvanilla)"><h3>FANTASY</h3></a>
+  </div>
+</div>
+<style>
+  .containerGenre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .headerGenre {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .box {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .box:hover {
+    background-color: #333;
+    scale: 102%;
+  }
+  .box h3 {
+    margin: 0;
+    font-weight: var(--fontBold);
+  }
+  .white {
+    color: white;
+  }
+  @media (max-width: 768px) {
+    .box {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  @media (max-width: 480px) {
+    .box {
+      flex: 0 0 calc(100% - 20px);
+    }
+  }
+</style>

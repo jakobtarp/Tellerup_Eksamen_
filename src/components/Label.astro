@@ -1,0 +1,42 @@
+---
+const {variant = "false"} = Astro.props;
+---
+<span data-variant={variant}>
+    <img src="public/big_badge.webp" alt="label">
+</span>
+
+<!-- <Label variant="true"></Label> -->
+
+<style>
+label {
+    width: 50%;
+    position: relative;
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-width: 30px;
+  border-color: transparent rgba(0,0,0,.7) rgba(0,0,0,.7) transparent;
+  border-style: solid;
+  color: #fff;
+  font-size: 20px;
+}
+
+[data-variant="true"] {
+    display: block;
+    position: absolute;
+}
+[data-variant="false"] {
+    display: none;
+}
+@media (min-width: 500px) {
+    label {
+    width: 20%;
+    position: relative;
+}
+}
+</style>

@@ -1,0 +1,200 @@
+---
+import ProductCardSection from "../components/ProductCardSection.astro";
+---
+
+<div class="carousel">
+  <button class="carousel-button carousel-button--left ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024">
+      <path fill="currentColor" d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0z"/>
+    </svg>
+  </button>
+  
+  <div class="carousel-track-container">
+    <ul class="carousel-track">
+      <li class="carousel-slide current-slide">
+        <ProductCardSection/>
+      </li>
+      <li class="carousel-slide">
+        <ProductCardSection/>
+      </li>
+      <li class="carousel-slide">
+        <ProductCardSection/>
+      </li>
+    </ul>
+  </div>
+
+  <button class="carousel-button carousel-button--right">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024">
+      <path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0z"/>
+    </svg>
+  </button>
+
+  <div class="carousel-nav">
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+  </div>
+</div>
+
+<style>
+  .carousel {
+    position: relative;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* .carousel-img {
+    width: 100%;
+    height: 100%;
+  } */
+  .carousel-track-container {
+    /* background: green; */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel-track {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+  }
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 113%;
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    /* border: solid 1px black; */
+  }
+  .carousel-button--left {
+    left: -40px;
+    cursor: pointer;
+  }
+  .carousel-button--right {
+    right: -40px;
+    cursor: pointer;
+  }
+  .carousel-button img {
+    width: 12px;
+  }
+  .carousel-nav {
+    /* background: pink; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .carousel-indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    margin: 0 12px;
+    cursor: pointer;
+  }
+  .carousel-indicator.current-slide {
+    background: black;
+  }
+  .carousel-button--right :hover {
+    width: 120%;
+  }
+  .carousel-button--left :hover {
+    width: 120%;
+  }
+  .carousel-indicator :hover {
+    width: 120%;
+    background: black;
+  }
+  .is-hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.carousel-button--right');
+  const prevButton = document.querySelector('.carousel-button--left');
+  const dotsNav = document.querySelector('.carousel-nav');
+  const dots = Array.from(dotsNav.children);
+
+  const slideSize = slides[0].getBoundingClientRect();
+  const slideWidth = slideSize.width;
+
+  const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+  };
+
+  slides.forEach(setSlidePosition);
+
+  const moveToSlide = (track, currentSlide, targetSlide) => {
+    const targetSlideIndex = Array.from(targetSlide.parentNode.children).indexOf(targetSlide);
+    track.style.transform = `translateX(-${slideWidth * targetSlideIndex}px)`;
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+  };
+
+  const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove('current-slide');
+    targetDot.classList.add('current-slide');
+  };
+
+  const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+    if (targetIndex === 0) {
+      prevButton.classList.add('is-hidden');
+      nextButton.classList.remove('is-hidden');
+    } else if (targetIndex === slides.length - 1) {
+      prevButton.classList.remove('is-hidden');
+      nextButton.classList.add('is-hidden');
+    } else {
+      prevButton.classList.remove('is-hidden');
+      nextButton.classList.remove('is-hidden');
+    }
+  };
+
+  prevButton.addEventListener('click', () => {
+    const currentSlide = track.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const prevDot = currentDot.previousElementSibling;
+    const prevIndex = slides.findIndex((slide) => slide === prevSlide);
+
+    moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
+    hideShowArrows(slides, prevButton, nextButton, prevIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const nextDot = currentDot.nextElementSibling;
+    const nextIndex = slides.findIndex((slide) => slide === nextSlide);
+
+    moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
+    hideShowArrows(slides, prevButton, nextButton, nextIndex);
+  });
+
+  dotsNav.addEventListener('click', (e) => {
+    const targetDot = e.target.closest('button');
+    if (!targetDot) return;
+
+    const currentSlide = track.querySelector('.current-slide');
+    const currentDot = dotsNav.querySelector('.current-slide');
+    const targetIndex = dots.findIndex((dot) => dot === targetDot);
+    const targetSlide = slides[targetIndex];
+
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+    hideShowArrows(slides, prevButton, nextButton, targetIndex);
+  });
+</script>

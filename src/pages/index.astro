@@ -1,0 +1,338 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Fragt from "../components/Fragt.astro";
+import Genre from "../components/Genre.astro";
+import Button from "../components/Button.astro";
+import Label from "../components/Label.astro";
+import Slider from "../components/Slider.astro";
+// import Cookies from "../components/Cookies.astro";
+
+import "../styles/global.css";
+import "../styles/tokens.css";
+---
+
+<MainLayout title="Home">
+  <!-- <Cookies/> -->
+
+  <!-- Hero section -->
+  <section class="hero">
+    <article class="heroArticle1">
+      <div>
+        <h1>Velkommen til Tellerups univers, <br /> fyldt med historier!</h1>
+        <Button link="kategoriside.html" variant="primary" size="base" style="white">Se vores udvalg</Button>
+      </div>
+    </article>
+    <div class="heroArticle2">
+      <img src="public/books.webp" alt="books" />
+    </div>
+  </section>
+  <!-- fragt section -->
+  <section class="fragtContainer">
+    <div class="fragt">
+      <Fragt icon="public/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" />
+      <Fragt icon="public/delivery-truck.webp" title="Hurtig fragt" text="1-3 dages levering" class="h-10" />
+      <Fragt icon="public/fast-delivery.webp" title="Fri fragt" text="Ved køb over 300 DKK leverer vi gratis til din hoveddør" />
+      <Fragt icon="public/book.webp" title="Retur nemt" text="Forkert valg? Returner nemt og gratis" />
+    </div>
+  </section>
+  <!-- single section -->
+  <section class="singleSection">
+    <Label variant="false" />
+    <div class="single mx-auto">
+      <div class="containerImg">
+        <img src="public/single.webp" alt="book" />
+      </div>
+      <article>
+        <div class="singleTextContainer">
+          <h1>Forudbestil “Større end os” af Christina Bonde</h1>
+          <h2>Udkommer den 1. Juli 2023. <br /> Bogen kan forudbestilles hos Tellerup.</h2>
+          <h3>Resumé</h3>
+          <p>Chaol og Nesryn er rejst til det sydlige kontinent med to mål for øje: At helbrede Chaolog bringe en styrke med tilbage. Det skal dog vise sig at blive sværere end forventet, for khaganen, det sydlige kontinents mægtige leder, er i sorg og ønsker ikke at træffe en beslutning her og nu. Da en healer bliver myrdet under mystiske omstændigheder, frygter Chaol og Nesrynat Valkerne er fulgt efter dem til syden.</p>
+        </div>
+        <div class="singleBottom">
+          <h2>320 DKK</h2>
+          <Button link="index.html" variant="primary" size="base" style="white">Forudbestil her</Button>
+        </div>
+      </article>
+      <span>
+        <img src="public/big_badge.webp" alt="nyhed" />
+      </span>
+    </div>
+  </section>
+  <!-- dubleview -->
+  <section class="dubleviewContainer">
+    <div class="box">
+      <div class="boxImage">
+        <img src="public/landing_tilbud.webp" alt="tilbud" />
+      </div>
+      <div class="boxContent">
+        <h3>Bøger behøves ikke <br /> at koste alverden</h3>
+        <Button link="kategoriside.html" variant="primary" size="base" style="white">Se vores tilbud</Button>
+      </div>
+    </div>
+    <div class="box" style="background-color: var(--darkvanilla);">
+      <div class="boxImage">
+        <img src="public/landing_tilbud.webp" alt="tilbud" />
+      </div>
+      <div class="boxContent">
+        <h3>Bøger behøves ikke <br /> at koste alverden</h3>
+        <Button link="kategoriside.html" variant="primary" size="base" style="white">Se vores tilbud</Button>
+      </div>
+    </div>
+  </section>
+  <!-- carussel -->
+  <section class="carusselSection">
+    <Slider />
+  </section>
+  <!-- genre -->
+  <section class="genreSection">
+    <Genre />
+  </section>
+</MainLayout>
+<style>
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bluegrey);
+    padding: 20px 10px 20px 10px;
+  }
+  .hero article {
+    padding: 15px;
+  }
+  @media only screen and (min-width: 520px) {
+    .hero {
+      flex-direction: row;
+      padding: 70px;
+    }
+  }
+  .hero .heroArticle1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .heroArticle1 h1 {
+    margin-bottom: 30px;
+    padding: 5px;
+    color: var(--white);
+  }
+
+  .hero .heroArticle2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .hero .heroArticle2 img {
+    max-width: 200px;
+  }
+  /* Section 2 */
+  .fragtContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 80px auto 80px auto;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .fragtContainer .fragt {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Section 3 */
+  .singleSection {
+    background-color: var(--vanilla);
+    margin: 0 3% 3%;
+    padding-bottom: 30px;
+  }
+  .singleSection .single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .singleSection .single .containerImg {
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10%;
+    max-width: 100%;
+    max-height: 100%;
+    place-content: center;
+  }
+  .singleSection .single .containerImg img {
+    position: relative;
+    border-radius: 5px;
+    max-width: 60%;
+    max-height: 165%;
+    justify-self: center;
+  }
+
+  .singleSection .single article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10%;
+  }
+
+  .singleSection .single article .singleTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .singleSection .single article .singleTextContainer h1 {
+    font-weight: var(--fontSemibold);
+  }
+
+  .singleSection .single article .singleTextContainer h2 {
+    font-weight: var(--fontSemibold);
+  }
+
+  .singleSection .single article .singleTextContainer h3 {
+    font-weight: var(--fontBold);
+  }
+
+  .singleSection .single article .singleTextContainer p {
+    margin-bottom: 0;
+    max-width: 520px;
+  }
+
+  .singleSection .single article .singleBottom {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    place-self: center;
+  }
+
+  .singleSection .single article .singleBottom h2 {
+    color: var(--orange);
+    font-weight: var(--fontBold);
+  }
+
+  .singleSection .single span {
+    display: none;
+  }
+
+  @media only screen and (min-width: 900px) {
+    .singleSection {
+      display: flex;
+      flex-direction: row;
+      margin: 0 4% 90px 4%;
+      max-height: 492px;
+      position: relative;
+    }
+
+    .singleSection .single {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 28px;
+      max-height: 492px;
+    }
+
+    .singleSection .single .containerImg {
+      width: 40%;
+      height: 100%;
+      padding: 80px 0;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .singleSection .single .containerImg img {
+      display: flex;
+      border-radius: 5px;
+    }
+
+    .singleSection .single article {
+      width: 50%;
+      flex: 1 1 0%;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      padding: 64px 100px 0px 48px;
+      margin: 0;
+    }
+
+    .singleSection .single article .singleTextContainer h1 {
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .singleSection .single span {
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      max-width: 240px;
+    }
+    .singleSection .single article .singleBottom {
+      margin-top: 32px;
+      flex-direction: row;
+      align-items: center;
+      place-self: end;
+    }
+  }
+  /*********************** Section 5 ******************/
+  .dubleviewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 90px 3% 90px 3%;
+    /* justify-content: center; */
+  }
+  .dubleviewContainer .box {
+    background-color: var(--lightblue);
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .dubleviewContainer .box .boxImage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+  }
+  .dubleviewContainer .box .boxContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .dubleviewContainer .box .boxContent h3 {
+    font-weight: var(--fontBold);
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .dubleviewContainer .box {
+      flex-direction: row;
+      min-height: 350px;
+    }
+  }
+  /*********************** Section 6 ******************/
+  .carusselSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 90px 3% 90px 3%;
+  }
+
+  /* Genresection */
+  .genreSection {
+    margin: 90px 3% 90px 3%;
+  }
+</style>

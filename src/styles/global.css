@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  background-color: var(--defaultBgColor);
+  font-family: var(--globalFont-family);
+}
+
+/* Fluid font size variables, for browsers that support clamp */
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    /* tilføjet */
+    --font-size-jakob: clamp(13px, 1vw + 15px, 22px);
+    --font-size-xs: clamp(11px, 0vw + 19px, 12px);
+    --font-size-sm: clamp(14px, 0vw + 12px, 15px);
+    --font-size-base: clamp(16px, 0vw + 15px, 19px);
+    --font-size-md: clamp(20px, 1vw + 18px, 25px);
+    --font-size-lg: clamp(25px, 1vw + 21px, 34px);
+    --font-size-xl: clamp(31px, 2vw + 25px, 45px);
+    --font-size-xxl: clamp(39px, 2vw + 30px, 60px);
+    --font-size-xxxl: clamp(49px, 4vw + 35px, 80px);
+  }
+}
+/* Fallback variables for browsers that don't support clamp */
+/* @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --font-size-sm: 13px;
+    --font-size-base: 16px;
+    --font-size-md: 20px;
+    --font-size-lg: 25px;
+    --font-size-xl: 31px;
+    --font-size-xxl: 39px;
+    --font-size-xxxl: 49px;
+  }
+  @media screen and (min-width: 1280px) {
+    :root {
+      --font-size-sm: 14px;
+      --font-size-base: 19px;
+      --font-size-md: 25px;
+      --font-size-lg: 34px;
+      --font-size-xl: 45px;
+      --font-size-xxl: 60px;
+      --font-size-xxxl: 80px;
+    }
+  }
+} */
+
+:root {
+  /** Border-Radius */
+  --globalBorderRadiusSm: 15px;
+  --globalBorderRadiusMd: 20px;
+  --globalBorderRadiusL: 30px;
+
+  /* Padding */
+  --globalPaddingXs: 10px;
+  --globalPaddingSm: 15px;
+  --globalPaddingMd: 20px;
+  --globalPaddingL: 30px;
+  --globalPaddingXl: 35px;
+
+  --globalPaddingL: 30px;
+
+  /** Shadow */
+  --box-shadow: 0px 4px 10px 0 rgba(113, 113, 113, 0.5);
+  --button-shadow: 0px 2px 3px 0 rgba(14, 13, 13, 0.5);
+
+  /* Font family */
+  --globalFont-family: Montserrat;
+
+  /* Font weight */
+  --fontNormal: 400;
+  --fontSemibold: 600;
+  --fontBold: 700;
+
+  /* Line height */
+  --primaryLineHeight: 23px;
+  --secondaryLineHeight: 30px;
+  --tertiaryLineHeight: 41px;
+  --lineHeightXL: 55px;
+
+  /* Text decoration */
+  --textNone: none;
+  --textUnderline: underline;
+  --textLineThrough: line-through;
+
+  /* Colorpalette */
+  --defaultBgColor: #fff;
+  --white: #fff;
+  --black: #000;
+
+  --vanilla: #f6f4f0;
+  --darkvanilla: #dfd3c7;
+  --green: #00c154;
+  --darkgreen: #5b7f58;
+  --lightblue: #bbdbf3;
+  --lighterblue: #c4ddf1;
+  --middleblue: #5d7791;
+  --darkerblue: #071522;
+  --royalblue: #113759;
+  --lightgrey: #898989;
+  --bluegrey: #465a6f;
+  --darkgrey: #667085;
+  --orange: #bd492f;
+  --darkOrange: #8f3c26;
+  --cardBg: #e8e8e8;
+
+  --headerblue: #a1bfd7;
+  --colorPlaceholder: #989898;
+
+  /*  btn */
+  --ctaHover: 105%;
+  --ctaColorWhite: #ffffff;
+  --ctaColorRed: #bd492f;
+  --ctaBorderRadius: 9999px;
+  --ctaColorBlack: #000;
+  --ctaTextDecoration: underline;
+  --ctaColorGreen: #5b7f58;
+
+  /* Hover */
+  --btnAnimation: ease-in;
+  --btnAnimation-timing-function: ease-out;
+  --btnAnimation-duration: 200ms;
+  --ctaHover: 110%;
+
+  /* Card */
+  --cardBgColor: #ffffff;
+  --cardMg: #e7e7e7;
+  --cardBorderRadius: 15px;
+  --CardWidth: 312px;
+  --CardHeight: 458px;
+
+  /* Card labels */
+  --CardLabelBgColor: var(--middleblue);
+}

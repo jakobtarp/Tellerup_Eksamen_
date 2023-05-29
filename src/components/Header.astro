@@ -1,0 +1,895 @@
+---
+import Button from "../components/Button.astro";
+import "../styles/tokens.css";
+import "../styles/base.css";
+import "../styles/global.css";
+---
+
+<header>
+  <div class="banner">
+    <div class="levering">
+      <svg class="closeBanner" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" stroke-miterlimit="1.5" d="M8 19a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"></path><path d="M10.05 17H15V6.6a.6.6 0 0 0-.6-.6H1m4.65 11H3.6a.6.6 0 0 1-.6-.6v-4.9"></path><path stroke-linejoin="round" d="M2 9h4"></path><path d="M15 9h5.61a.6.6 0 0 1 .548.356l1.79 4.028a.6.6 0 0 1 .052.243V16.4a.6.6 0 0 1-.6.6h-1.9M15 17h1"></path></g></svg>
+      <h4 class="closeBanner">Levering: 1-3 hverdage</h4>
+    </div>
+    <div class="trustpilot">
+      <h4>Trustpilot</h4>
+      <div class="rating">
+        <span class="full" aria-label="Fuld stjerne"></span>
+        <span class="full" aria-label="Fuld stjerne"></span>
+        <span class="full" aria-label="Fuld stjerne"></span>
+        <span class="full" aria-label="Fuld stjerne"></span>
+        <span class="unset" aria-label="Tom stjerne"></span>
+      </div>
+    </div>
+    <h4 class="closeBanner">Gratis levering ved køb over 300 DKK</h4>
+  </div>
+  <div class="mainheader">
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="public/tellerup_logo3_primaer.webp" alt="Tellerup logo" class="logo" />
+    </a>
+    <div class="search-container">
+      <input type="text" class="search-input" id="searchInput" placeholder="Søg..." />
+      <!-- <button>
+        <span class="search-icon"><i class="fas fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471c185.856 0 336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527z"></path></svg></i></span>
+      </button> -->
+    </div>
+
+    <div class="icons">
+      <a href="profil.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M5.85 17.1q1.275-.975 2.85-1.538T12 15q1.725 0 3.3.563t2.85 1.537q.875-1.025 1.363-2.325T20 12q0-3.325-2.337-5.663T12 4Q8.675 4 6.337 6.337T4 12q0 1.475.488 2.775T5.85 17.1ZM12 13q-1.475 0-2.488-1.012T8.5 9.5q0-1.475 1.012-2.488T12 6q1.475 0 2.488 1.012T15.5 9.5q0 1.475-1.012 2.488T12 13Zm0 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"></path></svg>
+      </a>
+      <a href="favorit.html" class="favoritter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"></path></svg>
+      </a>
+      <a href="kurv.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M19 22H5q-.825 0-1.413-.588T3 20V8q0-.825.588-1.413T5 6h2q0-2.075 1.463-3.538T12 1q2.075 0 3.538 1.463T17 6h2q.825 0 1.413.588T21 8v12q0 .825-.588 1.413T19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12h14Zm-7-6q1.85 0 3.35-1.225t1.475-2.75q0-.425-.275-.725t-.7-.3q-.35 0-.625.225t-.4.675q-.275.95-1.075 1.525T12 12q-.95 0-1.762-.575T9.175 9.9q-.125-.475-.375-.688T8.2 9q-.425 0-.712.3t-.288.725q0 1.525 1.475 2.75T12 14ZM5 8v12V8Z"></path></svg>
+      </a>
+
+      <!-- burgermenu -->
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <div class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="sidebar-menu">
+          <div class="headerOpenBurger">
+            <a href="index.html">
+              <img src="public/public/tellerup_logo3_primaer.webp" alt="Tellerup logo" class="logoBurger" />
+            </a>
+            <span class="iconX"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" color="#080707"><path d="M39 10.44 37.56 9 24 22.56 10.44 9 9 10.44 22.56 24 9 37.56 10.44 39 24 25.44 37.56 39 39 37.56 25.44 24 39 10.44z"></path></svg></span>
+          </div>
+
+          <ul>
+            <div class="margin-stroke"></div>
+
+            <div class="dropdown">
+              <div class="dropdown-title">
+                Kategori
+                <!-- pil -->
+                <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <div class="dropdown-content">
+                <a href="kategoriside.html">Alle bøger</a>
+                <a href="kategoriside.html">Bestsellers</a>
+                <a href="kategoriside.html">Nyheder</a>
+                <a href="genre.html">Genre</a>
+              </div>
+            </div>
+            <div class="stroke"></div>
+
+            <div class="dropdown">
+              <div class="dropdown-title">
+                Forfattere
+                <!-- pil -->
+                <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <div class="dropdown-content">
+                <a href="kategoriside.html">Christina Bonde</a>
+                <a href="kategoriside.html">Line Wenzel</a>
+                <a href="kategoriside.html">Louise Hailberg</a>
+                <a href="kategoriside.html">Line Wenzel</a>
+                <a href="kategoriside.html" class="seForfattere">Se alle</a>
+              </div>
+            </div>
+            <div class="stroke"></div>
+
+            <div class="dropdown">
+              <div class="dropdown-title">
+                Aldersgrupper
+                <!-- pil -->
+                <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <div class="dropdown-content">
+                <a href="kategoriside.html">0 - 2 år</a>
+                <a href="kategoriside.html">3 - 5 år</a>
+                <a href="kategoriside.html">6 - 10 år</a>
+                <a href="kategoriside.html">10 - 15 år</a>
+                <a href="kategoriside.html">Over 15 år</a>
+              </div>
+            </div>
+            <div class="stroke"></div>
+
+            <li><a class="font-semibold" href="kategoriside.html">Tilbud</a></li>
+            <div class="stroke"></div>
+
+            <li><a class="headbold font-semibold" href="kategoriside.html">Undervisningsmateriale</a></li>
+            <div class="stroke"></div>
+            <li class="containerFavoritter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"></path></svg>
+              <a href="favorit.html">Favoritter</a>
+            </li>
+          </ul>
+        </nav>
+      </label>
+      <div class="overlay"></div>
+    </div>
+  </div>
+  <div class="navHeader">
+    <!-- mobile search -->
+    <div class="search-container">
+      <input type="text" class="search-input" id="searchInput" placeholder="Søg..." />
+      <span class="search-icon"><i class="fas fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471c185.856 0 336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527z"></path></svg></i></span>
+    </div>
+    <!-- desktop search -->
+    <ul class="navLeft">
+      <!-- kategori -->
+      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown">
+        <button @click="open = !open" class="kategori">
+          <h2>Kategori</h2>
+          <!-- pil -->
+          <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+
+        <div class="dropdownContainer grid grid-cols-2">
+          <ul x-show="open" class="dropdown-content">
+            <div class="grid grid-cols-4 mr-auto mt-3">
+              <div>
+                <li>
+                  <a href="kategoriside.html">Alle bøger</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Bestsellers</a>
+                </li>
+                <li>
+                  <a href="genre.html">Genre</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Notesbøger</a>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <a href="kategoriside.html">Bogserier</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Indbundne bøger</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Lydbøger</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">E-bøger</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <!-- Forfattere -->
+      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown">
+        <button @click="open = !open" class="forfattere">
+          <h2>Forfattere</h2>
+          <!-- pil -->
+          <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdownContainer">
+          <ul x-show="open" class="dropdown-content">
+            <div class="grid grid-cols-8 mt-3">
+              <div>
+                <li>
+                  <a href="kategoriside.html">Christina Bonde</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Line Wenzel</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Louise Hailberg</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Line Wenzel</a>
+                </li>
+                <li class="seForfattere">
+                  <a href="kategoriside.html">Se alle</a>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <a href="kategoriside.html">Willam E. Iversen</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html ml-5">Emilie Vader</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Julie Lykke</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Martin Pedersen</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <!-- Aldersgrupper -->
+      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown">
+        <button @click="open = !open" class="aldersgrupper">
+          <h2>Aldersgrupper</h2>
+          <!-- pil -->
+          <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="dropdownContainer">
+          <ul x-show="open" class="dropdown-content">
+            <div class="grid grid-cols-4 mr-auto mt-3">
+              <div>
+                <li>
+                  <a href="kategoriside.html">0 - 2 år</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">3 - 5 år</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">6 - 10 år</a>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <a href="kategoriside.html">10 - 15 år</a>
+                </li>
+                <li>
+                  <a href="kategoriside.html">Over 15 år</a>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <li>
+        <a href="kategoriside.html" class="tilbud">
+          <h2>Tilbud</h2>
+        </a>
+      </li>
+    </ul>
+
+    <button class="undervisningsmateriale">
+      <h2>Undervisningsmateriale</h2>
+      <!-- pil -->
+      <!-- <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg> -->
+    </button>
+  </div>
+</header>
+
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<style>
+  *:focus {
+    outline: none;
+  }
+  header {
+    /* position: fixed; */
+    width: 100%;
+    z-index: 20;
+  }
+  h2,
+  h3,
+  h4,
+  p {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .banner {
+    background-color: var(--darkgreen);
+    display: flex;
+    flex-direction: column;
+    padding: 2px 10px;
+    align-items: center;
+  }
+  .banner .closeBanner {
+    display: none;
+  }
+  .banner .levering {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .banner .truck {
+    max-width: 40px;
+    color: var(--white);
+  }
+
+  .banner .trustpilot {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .rating {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .rating > span:before {
+    content: "\2605";
+  }
+
+  .full {
+    color: gold;
+  }
+
+  .unset {
+    color: white;
+  }
+  .banner .closeBanner {
+    display: hidden;
+  }
+  @media (min-width: 768px) {
+    .banner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .banner .closeBanner {
+      display: unset;
+    }
+    .banner .levering {
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .banner .trustpilot {
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+
+  /* mainheader */
+  .mainheader {
+    background-color: var(--headerblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .mainheader .logo {
+    width: 140px;
+  }
+  .mainheader .search-container {
+    display: none;
+  }
+  .mainheader .icons .favoritter {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .mainheader .search-container {
+      display: flex;
+      align-items: center;
+      /* position: relative; */
+    }
+
+    .headbold {
+      font-weight: bold;
+    }
+    .mainheader input[type="text"] {
+      background-color: var(--white);
+      border-radius: var(--globalBorderRadiusL);
+      color: var(--colorPlaceholder);
+      width: 100%;
+      max-width: 400px;
+      height: 36px;
+      padding: 10px 40px 10px 10px; /* Justeret padding for at give plads til ikonet */
+      border-style: none;
+    }
+    .mainheader .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+      align-content: center;
+    }
+
+    .mainheader .search-icon i svg {
+      color: var(--colorPlaceholder);
+      width: 50%;
+    }
+    .mainheader .search-icon:hover i svg {
+      color: black;
+    }
+    .mainheader .icons .favoritter {
+      display: unset;
+    }
+  }
+
+  .mainheader .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .mainheader .icons svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* burgermenu */
+  .headerOpenBurger {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: initial;
+  }
+  .logoBurger {
+    width: 80%;
+  }
+  .iconX {
+    width: 500px;
+    display: flex;
+    align-self: self-end;
+    cursor: pointer;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+  }
+
+  #main-menu {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: var(--lightblue);
+    margin: 0px;
+    z-index: 9;
+  }
+
+  #main-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+  }
+
+  #main-menu li {
+    list-style-type: none;
+    /* font-size: var(--font-size-sm); */
+  }
+
+  #main-menu a {
+    color: black;
+    /* font-size: 1.5rem; */
+
+    text-decoration: none;
+  }
+
+  #main-menu a:hover {
+    text-decoration: underline;
+  }
+  .burger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .burger-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+  }
+
+  #hamburger-input {
+    display: none;
+  }
+
+  #hamburger-menu {
+    /* position: fixed; */
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    z-index: 20;
+  }
+
+  #hamburger-menu #sidebar-menu {
+    visibilty: hidden;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: var(--lightblue);
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+
+  #hamburger-menu h3 {
+    color: black;
+    /* font-size: 2.2rem; */
+  }
+
+  #hamburger-menu ul {
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+
+  #hamburger-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--font-size-base);
+  }
+  .headbold {
+  }
+
+  #hamburger-menu a:hover {
+    text-decoration: underline;
+    animation-duration: 0.4s;
+    animation-delay: 1s;
+  }
+
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+  }
+  #hamburger-input:checked ~ .overlay {
+    visibility: visible;
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: 750px) {
+    #main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+
+  .dropdown-title {
+    cursor: pointer;
+    color: black;
+    font-size: var(--font-size-base);
+    font-weight: var(--fontSemibold);
+    text-decoration: none;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-size: 2.2rem;
+    text-decoration: none;
+    line-height: 2rem;
+  }
+
+  .seForfattere {
+    text-decoration: underline;
+    font-weight: var(--fontBold);
+  }
+  .arrow {
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 1px;
+    width: 30px;
+  }
+  .stroke {
+    border: solid 0.3px;
+  }
+  .margin-stroke {
+    border: solid 0.3px;
+    margin-top: 20px;
+  }
+  .containerFavoritter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  /****************** Navigation ************************/
+  .navHeader {
+    width: auto;
+    height: auto;
+    background-color: var(--lighterblue);
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .navLeft svg {
+    border: none;
+  }
+  svg {
+    border: none;
+  }
+  /* search */
+  .navHeader .search-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+
+    /* ændre ************************************************* */
+  }
+
+  .navHeader input[type="text"] {
+    background-color: var(--white);
+    border-radius: var(--globalBorderRadiusL);
+    color: var(--colorPlaceholder);
+    width: 100%;
+    max-width: 400px;
+    height: 36px;
+    padding: 10px 40px 10px 10px; /* Justeret padding for at give plads til ikonet */
+    border-style: none;
+  }
+  .navHeader .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .navHeader .search-icon i svg {
+    width: 50%;
+    color: var(--colorPlaceholder);
+  }
+  .navHeader .search-icon:hover i svg {
+    color: black;
+  }
+  .navHeader .navLeft,
+  .undervisningsmateriale {
+    display: none;
+  }
+  /* mobile */
+  @media (min-width: 768px) {
+    .navHeader {
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navHeader .search-container {
+      display: none;
+    }
+
+    .undervisningsmateriale {
+      font-weight: var(--fontBold);
+    }
+
+    .navHeader h2 {
+      font-weight: var(--fontBold);
+      color: var(--black);
+      text-decoration: none;
+      font-size: clamp(10px, 1.2vw, 16px);
+    }
+    .navHeader .navLeft {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      color: var(--black);
+      text-decoration: none;
+      list-style: none;
+    }
+    .navHeader .navLeft .kategori,
+    .forfattere,
+    .aldersgrupper,
+    .tilbud,
+    .undervisningsmateriale {
+      display: flex;
+      flex-direction: row;
+      gap: 2px;
+      align-items: center;
+      text-decoration: none;
+      width: fit-content;
+      height: max-content;
+    }
+    .arrow {
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 2px;
+      border-radius: 1px;
+      width: 30px;
+    }
+    .navLeft .arrow {
+      width: 20px;
+    }
+    .navHeader .navRight {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      color: var(--black);
+      text-decoration: none;
+      padding-bottom: 20px;
+      list-style: none;
+    }
+
+    button {
+      text-decoration: none;
+      border: unset;
+      background-color: unset;
+      cursor: pointer;
+      line-height: 18px;
+      font-size: clamp(10px, 1.2vw, 16px);
+    }
+    button :hover {
+      text-decoration: underline;
+    }
+
+    /* Dropdown */
+    .dropdownContainer :before {
+      display: none;
+      height: 0px;
+    }
+    .dropdownContainer :after {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-flow: column;
+      column-gap: 20px;
+      padding: 16px 0px;
+      transition: 0.3s;
+      height: 0px;
+    }
+
+    .dropdownContainer .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: var(--lighterblue);
+      column-gap: 20px;
+      padding: 16px 11px;
+      width: 100%;
+      z-index: 10;
+      left: 0px;
+      list-style: none;
+    }
+
+    .dropdown li a {
+      display: block;
+      color: var(--black);
+      text-decoration: none;
+      vertical-align: bottom;
+      padding-bottom: 1px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: clamp(10px, 1.2vw, 16px);
+    }
+    .dropdown ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+  }
+  /* Søgefunktion-stilarter */
+  /* .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      padding: 10px;
+    }
+
+    .search-input {
+      border: none;
+      border-radius: 25px;
+      padding: 10px;
+      width: 300px;
+      outline: none;
+    }
+
+    .result-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .result-item {
+      margin-bottom: 10px;
+    } */
+</style>
+
+<script>
+  // burgermenu
+  // const closeIcon = document.querySelector('.iconX');    // Hent reference til krydsikonet
+
+  // Hent reference til den sektion, der skal lukkes
+  const sectionToClose = document.querySelector("#sidebar-menu");
+
+  // Tilføj eventlistener til krydsikonet
+  closeIcon.addEventListener("click", function () {
+    // Skjul sektionen ved at tilføje en CSS-klasse
+    sectionToClose.classList.add("hidden");
+  });
+
+  function search() {
+    var searchInput = document.getElementById("searchInput") as HTMLInputElement;
+    var searchResults = document.getElementById("searchResults");
+    var searchText = searchInput.value.toLowerCase();
+
+    // Nulstil tidligere resultater
+    if (searchResults) {
+      searchResults.innerHTML = "";
+    }
+
+    // Udfør søgning
+    var items = ["Apple", "Banana", "Orange", "Pineapple", "Strawberry"];
+    var matchingItems = items.filter(function (item) {
+      return item.toLowerCase().indexOf(searchText) !== -1;
+    });
+
+    // Vis søgeresultater
+    if (searchResults) {
+      matchingItems.forEach(function (item) {
+        var li = document.createElement("li");
+        li.textContent = item;
+        searchResults.appendChild(li);
+      });
+    }
+  }
+</script>

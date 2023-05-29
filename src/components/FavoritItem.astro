@@ -1,0 +1,92 @@
+---
+import Button from "../components/Button.astro";
+
+const { img, title, author, format, delivery, price } = Astro.props;
+---
+
+<article>
+  <div class="imgContainer">
+    <a href="singleview.html">
+      <img src={img} alt="book" />
+    </a>
+    <a href="singleview.html">
+      <span class="label">Del 2 i serien</span>
+    </a>
+  </div>
+  <div class="text">
+    <h3>{title}</h3>
+    <h4>{author}</h4>
+    <h3>{format}</h3>
+    <h4>{delivery}</h4>
+  </div>
+  <slot />
+  <div class="right">
+    <h2>{price}</h2>
+    <Button link="favorit.html" variant="primary" size="base" style="white">Læg i kurv</Button>
+    <Button link="favorit.html" variant="ghost" style="red">Slet</Button>
+  </div>
+</article>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-block: 50px;
+    padding-inline: 0px;
+  }
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .label {
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+    background-color: var(--bluegrey);
+  }
+  article img {
+    max-width: 150px;
+    height: auto;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: var(--fontSemibold);
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  @media (min-width: 600px) {
+    article {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 50px;
+    }
+    .imgContainer {
+      max-width: 300px;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .text {
+      text-align: start;
+    }
+    .right {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-end;
+    }
+  }
+</style>
