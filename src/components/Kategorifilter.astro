@@ -1,0 +1,256 @@
+---
+import "../styles/tokens.css";
+import "../styles/base.css";
+import "../styles/global.css";
+import MainHeader from "../components/MainHeader.astro";
+import ProductCardSection from "../components/ProductCardSection.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Genre from "../components/Genre.astro";
+---
+
+<div class="box-section px-2 lg:px-8">
+  <div class="grid grid-cols-2 lg:block">
+    <div id="mobiledown" class="mobile-down lg:hidden my-auto px-2">
+      <Button variant="primary" size="base" style="white">Filtrer</Button>
+    </div>
+
+    <div class="">
+      <div class="flex justify-end mt-16 mb-5 cursor-pointer sort">
+        <p class="underline text-end">Sorter fra A-Z</p>
+        <img class="h-6 ml-2 my-auto" src="/downarrow.webp" alt="" />
+      </div>
+
+      <div class="flex justify-end search_resul">
+        <p class="text-end"><span class="font-bold">(8)</span> søgeresultater fundet</p>
+      </div>
+    </div>
+  </div>
+  <div id="products" class="products">
+    <ProductCardSection />
+  </div>
+
+  <div class="hidden lg:block showMe">
+    <div class="transcontainer">
+      <div class="dropdown-container">
+        <div>
+          <button class="dropdown-button">Kategorier</button>
+          <div class="dropdown">
+            <input class="mb-3 mt-4 ml-2" type="text" class="dropdown-search" placeholder="Søg..." />
+            <div class="dropdown-content">
+              <label><input class="mt-4" type="checkbox" name="option1" />Alle bøger</label><br />
+              <label><input class="mt-4" type="checkbox" name="option2" />Bestsellers</label><br />
+              <label><input class="mt-4" type="checkbox" name="option2" />Nyheder</label><br />
+              <label><input class="mt-4" type="checkbox" name="option2" />Notesbøger</label><br />
+              <label><input class="mt-4 mb-4" type="checkbox" name="option3" />Bogserier</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="dropdown-button">Forfattere</button>
+          <div class="dropdown">
+            <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
+            <div class="dropdown-content cursor-pointer">
+              <label><input class="mt-4" type="checkbox" name="option4" />Christina Bonde</label><br />
+              <label><input class="mt-4" type="checkbox" name="option5" />Bettina Stuhr Lindskow</label><br />
+              <label><input class="mt-4" type="checkbox" name="option4" />Line Wenzel</label><br />
+              <label><input class="mt-4" type="checkbox" name="option5" />Kristoffer J. Andersen</label><br />
+              <label><input class="mt-4" type="checkbox" name="option4" />Louise Hailberg</label><br />
+              <label><input class="mt-4 mb-4" type="checkbox" name="option5" />Kristoffer J. Andersen</label><br />
+              <br />
+              <button class="underline font-bold">Se alle</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="dropdown-button">Tags</button>
+          <div class="dropdown">
+            <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
+            <div class="dropdown-content cursor-pointer">
+              <label><input class="mt-4" type="checkbox" name="option7" />Fantasy</label><br />
+              <label><input class="mt-4" type="checkbox" name="option8" />Krimi</label><br />
+              <label><input class="mt-4" type="checkbox" name="option7" />Venskab</label><br />
+              <label><input class="mt-4" type="checkbox" name="option8" />Realisme</label><br />
+              <label><input class="mt-4" type="checkbox" name="option8" />Ungdom</label><br />
+              <label><input class="mt-4 mb-4" type="checkbox" name="option9" />Tilbud</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="dropdown-button">Aldersgruppe</button>
+          <div class="dropdown">
+            <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
+            <div class="dropdown-content cursor-pointer">
+              <label><input class="mt-4" type="checkbox" name="option7" />0-2 år</label><br />
+              <label><input class="mt-4" type="checkbox" name="option8" />3-5 år</label><br />
+              <label><input class="mt-4" type="checkbox" name="option7" />6-10 år</label><br />
+              <label><input class="mt-4" type="checkbox" name="option8" />10-15 år</label><br />
+              <label><input class="mt-4 mb-4" type="checkbox" name="option8" />Over 15 år</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="dropdown-button">Format</button>
+          <div class="dropdown">
+            <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
+            <div class="dropdown-content cursor-pointer">
+              <label><input class="mt-4" type="checkbox" name="option7" />Indbundet</label><br />
+              <label><input class="mt-4" type="checkbox" name="option8" />E-bog</label><br />
+              <label><input class="mt-4 mb-4" type="checkbox" name="option9" />Lydbog</label>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white h-16 py-5 lg:ml-10 mx-3">
+          <Button link="index.html" variant="primary" size="base" style="white">Ryd alle</Button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p class="page text-center sider mt-10 lg:ml-64">Viser 1 ud af 4 sider</p>
+  </div>
+
+  <div class="nextbefore flex justify-around lg:ml-64 next mt-5 mb-10">
+    <p class="underline cursor-pointer">Forrige side</p>
+    <p class="underline cursor-pointer">Næste side</p>
+  </div>
+</div>
+
+<style>
+  .dropdown-container {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    width: 250px;
+    max-width: 100%;
+  }
+
+  input {
+    border-bottom: 1.2px solid;
+  }
+
+  input:focus {
+    background-color: var(--lightblue);
+    outline: none;
+  }
+
+  .dropdown {
+    background-color: var(--white);
+    display: none;
+    /* padding: 12px 16px; */
+  }
+
+  .dropdown-button {
+    position: relative;
+    padding: 8px 0px;
+    text-align: left;
+    /* margin-top: 10px; */
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1.3px solid;
+    /* font-size: var(--font-size-base); */
+    font-weight: var(--fontBold);
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("/downarrow.webp");
+    background-size: cover;
+    background-position: right center;
+  }
+
+  .dropdown-content input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .dropdown-button.open::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("/downarrow.webp");
+    background-size: cover;
+    background-position: right center;
+    transform: translateY(1px) rotate(-180deg);
+  }
+
+  @media (max-width: 640px) {
+    .dropdown-container {
+      background-color: var(--white);
+      display: grid;
+      grid-template-columns: 1fr;
+      position: absolute;
+      top: 400px;
+      left: 0px;
+      width: 250px;
+      max-width: 100%;
+    }
+
+    .blurBg {
+      filter: blur(4px);
+    }
+
+    .dropdown-button {
+      background-color: var(--white);
+      position: relative;
+      padding: 8px;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      border-bottom: 1.3px solid;
+      /* font-size: var(--font-size-base); */
+      font-weight: var(--fontBold);
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+</style>
+
+<script>
+  const mobileDropDown = document.querySelector(".mobile-down");
+  const showMe = document.querySelector(".showMe");
+  const products = document.querySelector(".products");
+  const toggle = document.querySelector("#toggle");
+
+  mobileDropDown.addEventListener("click", openDropdown);
+
+  function openDropdown() {
+    showMe.classList.toggle("hidden");
+  }
+
+  mobileDropDown.addEventListener("click", () => {
+    products.classList.toggle("blurBg");
+  });
+
+  console.log(mobileDropDown);
+
+  var dropdownButtons = document.querySelectorAll(".dropdown-button");
+
+  for (var i = 0; i < dropdownButtons.length; i++) {
+    dropdownButtons[i].addEventListener("click", function () {
+      var dropdown = this.nextElementSibling;
+      var isOpen = this.classList.toggle("open");
+      dropdown.style.display = isOpen ? "block" : "none";
+    });
+  }
+  var dropdownSearches = document.querySelectorAll(".dropdown-search");
+</script>
