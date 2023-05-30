@@ -4,13 +4,11 @@ import "../styles/global.css";
 import "../styles/tokens.css";
 ---
 
-<a class="my-auto" href={link} data-variant={variant} data-size={size} data-style={style}>
- <h3><slot /></h3> 
+<a class="my-auto" href={link} data-variant={variant} data-size={size} data-style={style} tabindex="0" role="button" aria-controls="content">
+  <slot />
 </a>
 
 <style>
-  a {
-  }
   [data-variant="tags"] {
     background-color: var(--ctaColorRed);
     color: var(--ctaColorWhite);
@@ -34,6 +32,7 @@ import "../styles/tokens.css";
     scale: var(--ctaHover);
     box-shadow: var(--button-shadow);
     text-align: center;
+    transition-duration: 200ms;
   }
 
   [data-variant="secondary"] {
@@ -50,6 +49,7 @@ import "../styles/tokens.css";
     scale: var(--ctaHover);
     box-shadow: var(--button-shadow);
     text-align: center;
+    transition-duration: 200ms;
   }
 
   [data-variant="tertiary"] {

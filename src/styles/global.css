@@ -14,15 +14,13 @@ body {
   font-family: var(--globalFont-family);
 }
 
-/* Fluid font size variables, for browsers that support clamp */
-/* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     /* tilføjet */
     --font-size-jakob: clamp(13px, 1vw + 15px, 22px);
     --font-size-xs: clamp(11px, 0vw + 19px, 12px);
     --font-size-sm: clamp(14px, 0vw + 12px, 15px);
-    --font-size-base: clamp(16px, 0vw + 15px, 19px);
+    --font-size-base: clamp(18px, 0vw + 15px, 19px);
     --font-size-md: clamp(20px, 1vw + 18px, 25px);
     --font-size-lg: clamp(25px, 1vw + 21px, 34px);
     --font-size-xl: clamp(31px, 2vw + 25px, 45px);
@@ -31,7 +29,7 @@ body {
   }
 }
 /* Fallback variables for browsers that don't support clamp */
-/* @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     --font-size-sm: 13px;
     --font-size-base: 16px;
@@ -52,7 +50,7 @@ body {
       --font-size-xxxl: 80px;
     }
   }
-} */
+}
 
 :root {
   /** Border-Radius */
