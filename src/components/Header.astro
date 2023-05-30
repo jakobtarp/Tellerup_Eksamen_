@@ -4,6 +4,7 @@ import "../styles/tokens.css";
 import "../styles/base.css";
 import "../styles/global.css";
 ---
+
 <header>
   <div class="banner">
     <div class="levering">
@@ -67,7 +68,7 @@ import "../styles/global.css";
 
             <div class="dropdown">
               <div class="dropdown-title" aria-haspopup="true">
-                Kategori
+                Kategorier
                 <!-- pil -->
                 <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </div>
@@ -81,7 +82,7 @@ import "../styles/global.css";
             <div class="stroke"></div>
 
             <div class="dropdown">
-              <div class="dropdown-title" aria-haspopup="true" >
+              <div class="dropdown-title" aria-haspopup="true">
                 Forfattere
                 <!-- pil -->
                 <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -91,13 +92,13 @@ import "../styles/global.css";
                 <a href="/kategoriside.html">Line Wenzel</a>
                 <a href="/kategoriside.html">Louise Hailberg</a>
                 <a href="/kategoriside.html">Line Wenzel</a>
-                <a href="/kategoriside.html" class="seForfattere">Se alle</a>
+                <a href="/forfattere.html" class="seForfattere">Se alle</a>
               </div>
             </div>
             <div class="stroke"></div>
 
             <div class="dropdown">
-              <div class="dropdown-title"aria-haspopup="true">
+              <div class="dropdown-title" aria-haspopup="true">
                 Aldersgrupper
                 <!-- pil -->
                 <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -138,7 +139,7 @@ import "../styles/global.css";
       <!-- kategori -->
       <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
         <button @click="open = !open" class="kategori">
-          <h2>Kategori</h2>
+          <h2>Kategorier</h2>
           <!-- pil -->
           <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         </button>
@@ -297,6 +298,10 @@ import "../styles/global.css";
     padding: 2px 10px;
     align-items: center;
   }
+
+  .tilbud:hover {
+    text-decoration: underline;
+  }
   .banner .closeBanner {
     display: none;
   }
@@ -305,6 +310,10 @@ import "../styles/global.css";
     flex-direction: row;
     gap: 5px;
     align-items: center;
+  }
+
+  .dropdown-content a:hover {
+    font-weight: var(--fontSemibold);
   }
 
   .banner .truck {
