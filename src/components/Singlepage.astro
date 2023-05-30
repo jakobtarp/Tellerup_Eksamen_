@@ -8,20 +8,15 @@ import Slider from "./Slider.astro";
 ---
 
 <section>
-<<<<<<< HEAD
-  <article class="brødskrummer">
-    <Button link="index.html" variant="tertiary" style="red">Tellerup</Button>
-=======
   <div class="brødskrummer">
     <Button link="/index.html" variant="tertiary" style="red">Tellerup</Button>
->>>>>>> 298e99b4672af23bfa607f50567774a668dcef18
     <div class="arrow">&#10095;</div>
     <Button link="/genre.html" variant="tertiary" style="red">Genre</Button>
     <div class="arrow">&#10095;</div>
     <Button link="/kategoriside.html" variant="tertiary" style="red">Bøger</Button>
     <div class="arrow">&#10095;</div>
     <Button link="kategoriside.html" variant="tertiary" style="red">Større end os</Button>
-  </article>
+  </div>
 </section>
 <section class="indhold">
   <article>
@@ -31,13 +26,13 @@ import Slider from "./Slider.astro";
     <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" /></div>
   </article>
   <article>
-   <div class="header">
-  <div>
-    <h3>{type}</h3>
-    <h1>{title}</h1>
-  </div>
-  <img src="/heart.svg">
-</div>
+    <div class="header">
+      <div>
+        <h3>{type}</h3>
+        <h1>{title}</h1>
+      </div>
+      <img src="/heart.svg" />
+    </div>
     <div class="forfattare">
       <p>Af</p>
       <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
@@ -158,17 +153,16 @@ import Slider from "./Slider.astro";
   </article>
 </section>
 <section>
-  <Genre/>
+  <Genre />
 </section>
 <section>
-  <Slider/>
+  <Slider />
 </section>
 <style>
   h1 {
     margin-block: 20px;
   }
   h3 {
-    
     font-weight: bold;
   }
 
@@ -206,12 +200,12 @@ import Slider from "./Slider.astro";
     display: flex;
     width: 80%;
   }
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
   .billede {
     width: 50%;
   }
