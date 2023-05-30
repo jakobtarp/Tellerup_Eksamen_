@@ -1,19 +1,19 @@
 ---
-const { icon, title, text} = Astro.props;
+const { icon, title, text } = Astro.props;
 ---
 
 <div class="container">
-   <figure>
-        <img src={icon} alt="delivery icon" role="img" aria-label="delivery">
-   </figure> 
-   <div class="text_container">
-        <h3>{title}</h3>
-        <p>{text}</p>
-   </div>
+  <figure>
+    <img src={icon} alt="delivery icon" role="img" aria-label="delivery" />
+  </figure>
+  <div class="text_container">
+    <h3>{title}</h3>
+    <p>{text}</p>
+  </div>
 </div>
 
 <style>
-.container {
+  .container {
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -22,24 +22,24 @@ const { icon, title, text} = Astro.props;
     height: 200px;
     margin: 0;
     gap: 12px;
-}.figure {
+  }
+  figure img {
     width: 100px;
     margin: 0 auto;
-}
-.text_container {
+  }
+  .text_container {
     display: flex;
     flex-direction: column;
     gap: 5px;
     max-width: 200px;
     margin: 0 auto;
-}
-.text_container h3 {
+  }
+  .text_container h3 {
     font-weight: var(--fontBold);
     text-align: center;
-}
+  }
 
-.text_container p {
+  .text_container p {
     text-align: center;
-}
-
+  }
 </style>
