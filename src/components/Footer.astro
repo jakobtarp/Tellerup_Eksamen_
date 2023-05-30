@@ -9,17 +9,17 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
 ---
 
 <!-- Nyhedsbrev sektion -->
-<article class="nyhedsbrev grid lg:flex justify-between spacing">
+<article class="nyhedsbrev grid lg:flex lg:justify-between spacing">
   <div class="mt-5 mb-5">
-    <p class="tilmeld text-center lg:text-start">Tilmeld dig vores nyhedsbrev</p>
-    <p class="tilbud text-center lg:text-start">Vær den første til at modtage gode tilbud, inspiration og nyheder</p>
+    <p class="tilmeld text-center lg:text-start" aria-label="Tilmeld dig vores nyhedsbrev">Tilmeld dig vores nyhedsbrev</p>
+    <p class="tilbud text-center lg:text-start" aria-label="Vær den første til at modtage gode tilbud, inspiration og nyheder">Vær den første til at modtage gode tilbud, inspiration og nyheder</p>
   </div>
   <article class="email lg:flex gap-3 grid lg:mb-2 mb-7">
     <div class="flex search my-auto">
       <img class="w-6 my-auto mr-1 justify-between" src="/mail.webp" alt="newsletter" role="img" aria-label="newsletter" />
       <input class="" type="text" name="newsletter" placeholder="eksempel@gmail" />
     </div>
-    <Button link="www.google.dk" variant="primary" size="base" style="white">Tilmeld dig</Button>
+    <Button link="/index.html" variant="primary" size="base" style="white">Tilmeld dig</Button>
   </article>
 </article>
 
@@ -28,45 +28,37 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
   <div class="grid lg:grid-cols-3">
     <div class="left mt-7 lg:mt-10">
       <img class="w-44" src="/tellerup_logo3_primaer.webp" alt="Tellerup logo" role="img" aria-label="Tellerup logo" />
-      <p>Tellerup er et af de førende danske forlag med fokus på børne- og ungdomsbøger. Oprindeligt blev forlaget grundlagt i 1972 af skolelærer Kristian Tellerup. Han havde skrevet en sød lille historie om Preben Ræv, som intet forlag havde lyst til at udgive, og så gjorde han det selv! Preben Ræv blev forlagets logo – den hylende ræv – og bogen blev genudgivet i en 40-års- jubilæumsudgave i 2012.</p>
+      <p aria-label="description of t´Tellerup">Tellerup er et af de førende danske forlag med fokus på børne- og ungdomsbøger. Oprindeligt blev forlaget grundlagt i 1972 af skolelærer Kristian Tellerup. Han havde skrevet en sød lille historie om Preben Ræv, som intet forlag havde lyst til at udgive, og så gjorde han det selv! Preben Ræv blev forlagets logo – den hylende ræv – og bogen blev genudgivet i en 40-års- jubilæumsudgave i 2012.</p>
       <div class="grid gap-2 mt-5 mb-10">
-        <ul>
-          <li><h2>Kontakt</h2></li>
-          <li><p>Telefon: (+45) 00 00 00 00</p></li>
-          <li><p>Email: info@tellerup.dk</p></li>
-          <li><p>Rævensvej 111, Rævløse 2200</p></li>
-        </ul>
+        <h2 aria-label="Kontakt">Kontakt</h2>
+        <p aria-label="Telephone nr.: 00 00 00 00">Telefon: (+45) 00 00 00 00</p>
+        <p aria-label="Email: info@tellerup.dk">Email: info@tellerup.dk</p>
+        <p aria-label="adress: Rævensvej 111, Rævløse 2200">Rævensvej 111, Rævløse 2200</p>
       </div>
     </div>
-    <div class="right lg:col-start-3 mt-8 mb-5 lg:mt-10">
-      <ul>
-        <li><h2>Sociale medier</h2></li>
-        <div class="flex gap-2 mt-2 sociale">
-          <li><figure><img class="w-11" src="/facebook.webp" alt="Facebook ikon" role="img" aria-label="facebook icon" /></figure></li>
-          <li><figure><img class="w-11" src="/instagram.webp" alt="Instagram ikon" role="img" aria-label="instagram icon" /></figure></li>
-          <li><figure><img class="w-11" src="/linkedin.webp" alt="Linkedin ikon" role="img" aria-label="linkdin icon" /></figure></li>
-        </div>
-      </ul>
+    <div class="right lg:col-start-3 mb-5 lg:mt-10">
+      <h2 aria-label="Kontakt">Sociale medier</h2>
+      <div class="flex gap-2 mt-2 sociale">
+        <img class="w-11" src="/facebook.webp" alt="Facebook ikon" role="img" aria-label="facebook icon" />
+        <img class="w-11" src="/instagram.webp" alt="Instagram ikon" role="img" aria-label="instagram icon" />
+        <img class="w-11" src="/linkedin.webp" alt="Linkedin ikon" role="img" aria-label="linkdin icon" />
+      </div>
       <div class="grid lg:grid-cols-2 lg:mt-12 mt-9">
         <div class="grid gap-3">
-          <ul>
-            <li><h2>Sider</h2></li>
-            <li><p>Log ind</p></li>
-            <li><p>Bøger</p></li>
-            <li><p>Lydbøger</p></li>
-            <li><p>E-bøger</p></li>
-            <li><p>Undervisningsmateriale</p></li>
-          </ul>
+          <h2 aria-label="Sider">Sider</h2>
+          <p aria-label="Log ind">Log ind</p>
+          <p aria-label="Bøger">Bøger</p>
+          <p aria-label="Lydbøger">Lydbøger</p>
+          <p aria-label="e-bøger">E-bøger</p>
+          <p aria-label="undervisningsmateriale">Undervisningsmateriale</p>
         </div>
         <div class="grid gap-3 mt-9 lg:mt-0">
-          <ul>
-            <li><h2>Kundeservice</h2></li>
-            <li><p>Kontakt os</p></li>
-            <li><p>Privatlivspolitik</p></li>
-            <li><p>Cookiepolitik</p></li>
-            <li><p>Salgsbetingelser</p></li>
-            <li><p>Administer samtykke</p></li>
-          </ul>
+          <h2 aria-label="kundeservice">Kundeservice</h2>
+          <p aria-label="Kontakt">Kontakt os</p>
+          <p aria-label="Privatlivspolitik">Privatlivspolitik</p>
+          <p aria-label="cookiepolitik">Cookiepolitik</p>
+          <p aria-label="salgsbetingelser">Salgsbetingelser</p>
+          <p aria-label="administrer samtykke">Administer samtykke</p>
         </div>
       </div>
 

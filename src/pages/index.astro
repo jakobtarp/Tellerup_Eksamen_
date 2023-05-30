@@ -9,6 +9,10 @@ import Slider from "../components/Slider.astro";
 
 import "../styles/global.css";
 import "../styles/tokens.css";
+
+meta: title: "hjem side";
+description: "forside for Tellerup";
+keywords: "Tellerup, forside, hjem";
 ---
 
 <MainLayout title="Home">
@@ -50,9 +54,9 @@ import "../styles/tokens.css";
       <div class="containerImg">
         <img src="/single.webp" alt="book spillets forbandelse" role="img" aria-label="spillets forbandelse book" />
       </div>
-      <article>
+      <article class="">
         <div class="singleTextContainer">
-          <h1>Forudbestil “Større end os” af Christina Bonde</h1>
+          <h1>“Større end os” <br /> af Christina Bonde</h1>
           <h2>Udkommer den 1. Juli 2023.</h2>
           <h3>Resumé</h3>
           <p>Chaol og Nesryn er rejst til det sydlige kontinent med to mål for øje: At helbrede Chaolog bringe en styrke med tilbage. Det skal dog vise sig at blive sværere end forventet, for khaganen, det sydlige kontinents mægtige leder, er i sorg og ønsker ikke at træffe en beslutning her og nu. Da en healer bliver myrdet under mystiske omstændigheder, frygter Chaol og Nesrynat Valkerne er fulgt efter dem til syden.</p>
@@ -89,9 +93,9 @@ import "../styles/tokens.css";
     </div>
   </section>
   <!-- carussel -->
-  <section class="carusselSection">
+  <!-- <section class="carusselSection">
     <Slider />
-  </section>
+  </section> -->
   <!-- genre -->
   <section class="genreSection">
     <Genre />
@@ -157,8 +161,10 @@ import "../styles/tokens.css";
   /* Section 3 */
   .singleSection {
     background-color: var(--vanilla);
-    margin: 0 3% 3%;
     padding-bottom: 30px;
+    gap: 30px;
+    max-width: 100%;
+    margin: 90px 3.5% 90px 3.5%;
   }
   .singleSection .single {
     display: flex;
@@ -200,9 +206,8 @@ import "../styles/tokens.css";
     font-weight: var(--fontSemibold);
   }
 
-  .singleSection .single article .singleTextContainer h2 {
-    font-weight: var(--fontSemibold);
-  }
+  /* .singleSection .single article .singleTextContainer h2 {
+  } */
 
   .singleSection .single article .singleTextContainer h3 {
     font-weight: var(--fontBold);
@@ -235,9 +240,11 @@ import "../styles/tokens.css";
     .singleSection {
       display: flex;
       flex-direction: row;
-      margin: 0 4% 90px 4%;
       max-height: 492px;
+      max-width: 100%;
       position: relative;
+      gap: 30px;
+      margin: 90px 3.5% 90px 3.5%;
     }
 
     .singleSection .single {
@@ -292,7 +299,7 @@ import "../styles/tokens.css";
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 90px 3% 90px 3%;
+    margin: 90px 3.5% 90px 3.5%;
     /* justify-content: center; */
   }
   .dubleviewContainer .box {

@@ -8,10 +8,16 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Genre from "../components/Genre.astro";
 import Kategorifilter from "../components/Kategorifilter.astro";
+
+meta:
+title: 'kategoriside'
+description: 'hele udvalget'
+keywords: 'kategori, kategorier'
+
 ---
 
 <MainLayout title="Kategorier">
-  <MainHeader title="Kategorier" beskrivelse="Se vores store udvalg" />
+  <MainHeader title="Kategorier" beskrivelse="Se vores store udvalg" aria-label="kategorier"/>
   <main>
     <Kategorifilter />
     <Genre />
