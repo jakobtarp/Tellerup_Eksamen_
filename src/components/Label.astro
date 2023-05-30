@@ -2,7 +2,9 @@
 const {variant = "false"} = Astro.props;
 ---
 <span data-variant={variant}>
-    <img src="public/big_badge.webp" alt="label">
+    <figure>
+    <img src="public/big_badge.webp" alt="news label" role="img" aria-label="news label">
+    </figure>
 </span>
 
 <!-- <Label variant="true"></Label> -->
