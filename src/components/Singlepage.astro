@@ -21,7 +21,7 @@ import Button from "./Button.astro";
     <!-- Brødkrummer -->
 
     <!-- Billede -->
-    <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" /></div>
+    <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" role="img" aria-label="book"/></div>
   </article>
   <article>
     <h3>{type}</h3>
@@ -42,7 +42,7 @@ import Button from "./Button.astro";
         <div class="box border_active">
           <div></div>
           <div class="info_format">
-            <img src="/indbunden.webp" alt="book" width="35px" />
+            <img src="/indbunden.webp" alt="book" width="35px" role="img" aria-label="book"/>
             <div class="title_format">
               <p>Indbunden</p>
               <p><strong>{pris_indbunden} DKK</strong></p>
@@ -50,14 +50,14 @@ import Button from "./Button.astro";
             <p><s>{tidligere_pris_indbunden}</s></p>
           </div>
           <div class="check_active">
-            <img class="red_check" src="/check.webp" alt="check" />
+            <img class="red_check" src="/check.webp" alt="check" role="img" aria-label="book"/>
           </div>
         </div>
 
         <div class="box">
           <div></div>
           <div class="info_format">
-            <img src="/ebog.webp" alt="book" width="25px" />
+            <img src="/ebog.webp" alt="book" width="25px" role="img" aria-label="book"/>
             <div class="title_format">
               <h3>E-bog</h3>
               <h3><strong>{pris_ebog} DKK</strong></h3>
@@ -72,7 +72,7 @@ import Button from "./Button.astro";
         <div class="box">
           <div></div>
           <div class="info_format">
-            <img src="/lydbog.webp" alt="book" width="35px" />
+            <img src="/lydbog.webp" alt="book" width="35px" role="img" aria-label="book"/>
             <div class="title_format">
               <h3>Lydbog</h3>
               <h3><strong>{pris_lydbog} DKK</strong></h3>
@@ -99,7 +99,7 @@ import Button from "./Button.astro";
       <div class="tilbage">
         <div class="lager">
           <div class="lager_box">
-            <img src="/check.webp" alt="check" />
+            <img src="/check.webp" alt="check icon" role="img" aria-label="check icon"/>
           </div>
           <p class="lager_tekst">På lager</p>
         </div>

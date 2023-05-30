@@ -3,9 +3,9 @@ const { icon, title, text} = Astro.props;
 ---
 
 <div class="container">
-   <div class="containerImg">
-        <img src={icon} alt="icon">
-    </div> 
+   <figure>
+        <img src={icon} alt="delivery icon" role="img" aria-label="delivery">
+   </figure> 
    <div class="text_container">
         <h3>{title}</h3>
         <p>{text}</p>
@@ -22,7 +22,7 @@ const { icon, title, text} = Astro.props;
     height: 200px;
     margin: 0;
     gap: 12px;
-}.containerImg {
+}.figure {
     width: 100px;
     margin: 0 auto;
 }

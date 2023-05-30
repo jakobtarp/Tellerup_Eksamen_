@@ -16,8 +16,8 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
   </div>
   <article class="email lg:flex gap-3 grid lg:mb-2 mb-7">
     <div class="flex search my-auto">
-      <img class="w-6 my-auto mr-1 justify-between" src="/mail.webp" alt="" />
-      <input class="" type="text" placeholder="eksempel@gmail" />
+      <img class="w-6 my-auto mr-1 justify-between" src="/mail.webp" alt="newsletter" role="img" aria-label="newsletter"/>
+      <input class="" type="text" name="newsletter" placeholder="eksempel@gmail" />
     </div>
     <Button link="www.google.dk" variant="primary" size="base" style="white">Tilmeld dig</Button>
   </article>
@@ -27,7 +27,7 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
 <article class="mainfooter justify-between spacing">
   <div class="grid lg:grid-cols-3">
     <div class="left mt-7 lg:mt-10">
-      <img class="w-44" src="/tellerup_logo3_primaer.webp" alt="Tellerup logo" />
+      <img class="w-44" src="/tellerup_logo3_primaer.webp" alt="Tellerup logo" role="img" aria-label="Tellerup logo"/>
       <p>Tellerup er et af de førende danske forlag med fokus på børne- og ungdomsbøger. Oprindeligt blev forlaget grundlagt i 1972 af skolelærer Kristian Tellerup. Han havde skrevet en sød lille historie om Preben Ræv, som intet forlag havde lyst til at udgive, og så gjorde han det selv! Preben Ræv blev forlagets logo – den hylende ræv – og bogen blev genudgivet i en 40-års- jubilæumsudgave i 2012.</p>
       <div class="grid gap-2 mt-5 mb-10">
         <h2>Kontakt</h2>
@@ -39,9 +39,9 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
     <div class="right lg:col-start-3 mt-8 mb-5 lg:mt-10">
       <h2 class="">Sociale medier</h2>
       <div class="flex gap-2 mt-2 sociale">
-        <img class="w-11" src="/facebook.webp" alt="Facebook ikon" />
-        <img class="w-11" src="/instagram.webp" alt="Instagram ikon" />
-        <img class="w-11" src="/linkedin.webp" alt="Linkedin ikon" />
+        <img class="w-11" src="/facebook.webp" alt="Facebook ikon" role="img" aria-label="facebook icon"/>
+        <img class="w-11" src="/instagram.webp" alt="Instagram ikon" role="img" aria-label="instagram icon"/>
+        <img class="w-11" src="/linkedin.webp" alt="Linkedin ikon" role="img" aria-label="linkdin icon"/>
       </div>
       <div class="grid lg:grid-cols-2 lg:mt-12 mt-9">
         <div class="grid gap-3">
@@ -62,12 +62,23 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
         </div>
       </div>
       <div class="pay h-7 flex mt-6 gap-1 mb-3">
-        <img src="/visa.webp" alt="Visa" />
-        <img src="/visaelectron.webp" alt="Visa Elektron" />
-        <img src="/mastercard.webp" alt="Mastercard" />
-        <img src="/gavekort.webp" alt="Gavekort" />
-        <img src="/mobilpay.webp" alt="Mobilpay" />
-        <img src="/dk.webp" alt="Dankort" />
+        <figure>
+        <img src="/visa.webp" alt="Visa card" role="img" aria-label="visa card icon"/>
+        </figure>
+        <figure>
+        <img src="/visaelectron.webp" alt="Visa Elektron" role="img" aria-label="visa electron card icon"/>
+        </figure>
+        <figure>
+        <img src="/mastercard.webp" alt="Mastercard" role="img" aria-label="mastercard card icon"/>
+        </figure>
+        <figure>
+        <img src="/gavekort.webp" alt="Gavekort" role="img" aria-label="giftcard"/>
+        </figure>
+        <figure>
+        <img src="/mobilpay.webp" alt="Mobilpay" role="img" aria-label="mobilepay icon"/>
+        </figure>
+        <figure>
+        <img src="/dk.webp" alt="Dankort" role="img" aria-label="dankort card icon"/>
       </div>
     </div>
   </div>

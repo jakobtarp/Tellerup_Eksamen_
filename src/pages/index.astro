@@ -23,16 +23,24 @@ import "../styles/tokens.css";
       </div>
     </article>
     <div class="heroArticle2">
-      <img src="/books.webp" alt="books" />
+      <img src="/books.webp" alt="books" role="img" aria-label="books icon"/>
     </div>
   </section>
   <!-- fragt section -->
   <section class="fragtContainer">
     <div class="fragt">
-      <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" />
-      <Fragt icon="/delivery-truck.webp" title="Hurtig fragt" text="1-3 dages levering" class="h-10" />
-      <Fragt icon="/fast-delivery.webp" title="Fri fragt" text="Ved køb over 300 DKK leverer vi gratis til din hoveddør" />
-      <Fragt icon="/book.webp" title="Retur nemt" text="Forkert valg? Returner nemt og gratis" />
+      <figure>
+      <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" role="img" aria-label="delivery img"/>
+    </figure>
+    <figure>
+      <Fragt icon="/delivery-truck.webp" title="Hurtig fragt" text="1-3 dages levering" class="h-10" role="img" aria-label="delivery icon"/>
+    </figure>
+    <figure>
+      <Fragt icon="/fast-delivery.webp" title="Fri fragt" text="Ved køb over 300 DKK leverer vi gratis til din hoveddør" role="img" aria-label="delivery icon"/>
+    </figure>
+    <figure>
+      <Fragt icon="/book.webp" title="Retur nemt" text="Forkert valg? Returner nemt og gratis" role="img" aria-label="delivery icon"/>
+    </figure>
     </div>
   </section>
   <!-- single section -->
@@ -40,7 +48,7 @@ import "../styles/tokens.css";
     <Label variant="false" />
     <div class="single mx-auto">
       <div class="containerImg">
-        <img src="/single.webp" alt="book" />
+        <img src="/single.webp" alt="book spillets forbandelse" role="img" aria-label="spillets forbandelse book"/>
       </div>
       <article>
         <div class="singleTextContainer">
@@ -55,7 +63,7 @@ import "../styles/tokens.css";
         </div>
       </article>
       <span>
-        <img src="/big_badge.webp" alt="nyhed" />
+        <img src="/big_badge.webp" alt="new book" role="img" aria-label="new book"/>
       </span>
     </div>
   </section>
@@ -63,7 +71,7 @@ import "../styles/tokens.css";
   <section class="dubleviewContainer">
     <div class="box">
       <div class="boxImage">
-        <img src="/landing_tilbud.webp" alt="tilbud" />
+        <img src="/landing_tilbud.webp" alt="discount" role="img" aria-label="discount label"/>
       </div>
       <div class="boxContent">
         <h3>Bøger behøves ikke <br /> at koste alverden</h3>
@@ -72,7 +80,7 @@ import "../styles/tokens.css";
     </div>
     <div class="box" style="background-color: var(--darkvanilla);">
       <div class="boxImage">
-        <img src="/landing_tilbud.webp" alt="tilbud" />
+        <img src="/landing_tilbud.webp" alt="discount label" role="img" aria-label="discount label"/>
       </div>
       <div class="boxContent">
         <h3>Bøger behøves ikke <br /> at koste alverden</h3>

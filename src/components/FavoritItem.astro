@@ -7,10 +7,10 @@ const { img, title, author, format, delivery, price } = Astro.props;
 <article>
   <div class="imgContainer">
     <a href="/singleview.html">
-      <img src={img} alt="book" />
+      <img src={img} alt="book" role="img" aria-label="book by Christine Bunde"/>
     </a>
     <a href="/singleview.html">
-      <span class="label">Del 2 i serien</span>
+      <span class="label" data-message="series">Del 2 i serien</span>
     </a>
   </div>
   <div class="text">
