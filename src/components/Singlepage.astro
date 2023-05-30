@@ -1,12 +1,14 @@
 ---
-const { img, title, type, resume, resume_lang, pris_indbunden, format, forlag, udgave, EAN, levering, tidligere_pris_indbunden, tidligere_pris_ebog, pris_ebog, tidligere_pris_lydbog, pris_lydbog } = Astro.props;
+const { img, title, type, resume, resume_lang, pris_indbunden, forlag, udgave, EAN, levering, tidligere_pris_indbunden, tidligere_pris_ebog, pris_ebog, tidligere_pris_lydbog, pris_lydbog } = Astro.props;
 import "../styles/tokens.css";
 import "../styles/global.css";
 import Button from "./Button.astro";
+import Genre from "./Genre.astro";
+import Slider from "./Slider.astro";
 ---
 
 <section>
-  <div class="brødskrummer">
+  <article class="brødskrummer">
     <Button link="index.html" variant="tertiary" style="red">Tellerup</Button>
     <div class="arrow">&#10095;</div>
     <Button link="genre.html" variant="tertiary" style="red">Genre</Button>
@@ -14,9 +16,9 @@ import Button from "./Button.astro";
     <Button link="kategoriside.html" variant="tertiary" style="red">Bøger</Button>
     <div class="arrow">&#10095;</div>
     <Button link="kategoriside.html" variant="tertiary" style="red">Større end os</Button>
-  </div>
+  </article>
 </section>
-<section class="">
+<section class="indhold">
   <article>
     <!-- Brødkrummer -->
 
@@ -24,8 +26,13 @@ import Button from "./Button.astro";
     <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" /></div>
   </article>
   <article>
+   <div class="header">
+  <div>
     <h3>{type}</h3>
     <h1>{title}</h1>
+  </div>
+  <img src="/heart.svg">
+</div>
     <div class="forfattare">
       <p>Af</p>
       <Button link="kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
@@ -44,7 +51,7 @@ import Button from "./Button.astro";
           <div class="info_format">
             <img src="/indbunden.webp" alt="book" width="35px" />
             <div class="title_format">
-              <p>Indbunden</p>
+              <h3>Indbunden</h3>
               <p><strong>{pris_indbunden} DKK</strong></p>
             </div>
             <p><s>{tidligere_pris_indbunden}</s></p>
@@ -145,13 +152,18 @@ import Button from "./Button.astro";
     </div>
   </article>
 </section>
-
+<section>
+  <Genre/>
+</section>
+<section>
+  <Slider/>
+</section>
 <style>
   h1 {
     margin-block: 20px;
   }
   h3 {
-    color: var(--ctaColorRed);
+    
     font-weight: bold;
   }
 
@@ -162,7 +174,7 @@ import Button from "./Button.astro";
     padding-top: 20px;
     padding-bottom: 5px;
   }
-  section {
+  .indhold {
     display: grid;
     @media (min-width: 900px) {
       grid-template-columns: 1fr 1fr;
@@ -189,7 +201,12 @@ import Button from "./Button.astro";
     display: flex;
     width: 80%;
   }
-
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
   .billede {
     width: 50%;
   }
