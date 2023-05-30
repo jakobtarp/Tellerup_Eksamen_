@@ -14,8 +14,6 @@ body {
   font-family: var(--globalFont-family);
 }
 
-/* Fluid font size variables, for browsers that support clamp */
-/* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     /* tilføjet */
@@ -31,7 +29,7 @@ body {
   }
 }
 /* Fallback variables for browsers that don't support clamp */
-/* @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
     --font-size-sm: 13px;
     --font-size-base: 16px;
@@ -52,7 +50,7 @@ body {
       --font-size-xxxl: 80px;
     }
   }
-} */
+}
 
 :root {
   /** Border-Radius */
