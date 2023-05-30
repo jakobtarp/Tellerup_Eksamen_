@@ -30,7 +30,7 @@ import Slider from "./Slider.astro";
         <h1>{title}</h1>
       </div>
       <figure class="heart">
-        <img src="/heart.svg" />
+        <img src="/heart.svg" width="30px" />
       </figure>
     </div>
     <div class="forfattare">
@@ -153,11 +153,13 @@ import Slider from "./Slider.astro";
   </article>
 </section>
 <section>
-  <Genre />
-</section>
-<section>
   <Slider />
 </section>
+
+<section>
+  <Genre />
+</section>
+
 <style>
   h1 {
     margin-block: 20px;
@@ -191,8 +193,8 @@ import Slider from "./Slider.astro";
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
-    margin-block: 40px;
+    gap: 10px;
+    margin-block: 15px;
   }
 
   .arrow {
@@ -229,6 +231,12 @@ import Slider from "./Slider.astro";
     margin-block: 20px;
     gap: 20px;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 900px) {
+    .formater {
+      justify-content: center;
+    }
   }
 
   .box {
@@ -324,6 +332,12 @@ import Slider from "./Slider.astro";
     flex-wrap: wrap;
   }
 
+  @media (max-width: 900px) {
+    .knapper {
+      justify-content: center;
+    }
+  }
+
   .tilbage {
     @media (max-width: 900px) {
       order: -1;
@@ -333,7 +347,6 @@ import Slider from "./Slider.astro";
   .quantity {
     display: flex;
     align-items: center;
-    padding-left: 50px;
   }
 
   .quantity .count {
