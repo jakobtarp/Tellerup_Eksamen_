@@ -17,12 +17,12 @@ import Genre from "../components/Genre.astro";
 
     <div class="">
       <div class="flex justify-end mt-16 mb-5 cursor-pointer sort">
-        <p class="underline text-end">Sorter fra A-Z</p>
+        <p class="underline text-end" aria-label="Sorter fra a-z">Sorter fra A-Z</p>
         <img class="h-6 ml-2 my-auto" src="/downarrow.webp" alt="down arrow" role="img" aria-label="down arrow"/>
       </div>
 
       <div class="flex justify-end search_resul">
-        <p class="text-end"><span class="font-bold">(8)</span> søgeresultater fundet</p>
+        <p class="text-end" aria-label="søgeresultater funder"><span class="font-bold">(8)</span> søgeresultater fundet</p>
       </div>
     </div>
   </div>
@@ -108,12 +108,12 @@ import Genre from "../components/Genre.astro";
   </div>
 
   <div>
-    <p class="page text-center sider mt-10 lg:ml-64">Viser 1 ud af 4 sider</p>
+    <p class="page text-center sider mt-10 lg:ml-64" aria-label="Viser sider">Viser 1 ud af 4 sider</p>
   </div>
 
   <div class="nextbefore flex justify-around lg:ml-64 next mt-5 mb-10">
-    <p class="underline cursor-pointer">Forrige side</p>
-    <p class="underline cursor-pointer">Næste side</p>
+    <p class="underline cursor-pointer" aria-label="forrige side">Forrige side</p>
+    <p class="underline cursor-pointer" aria-label="næste side">Næste side</p>
   </div>
 </div>
 
