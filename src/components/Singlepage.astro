@@ -26,7 +26,7 @@ import Slider from "./Slider.astro";
   <article>
     <div class="header">
       <div>
-        <h3>{type}</h3>
+        <h3 class="type">{type}</h3>
         <h1>{title}</h1>
       </div>
       <figure class="heart">
@@ -171,12 +171,19 @@ import Slider from "./Slider.astro";
     padding-bottom: 5px;
   }
 
+  .type {
+    color: var(--ctaColorRed);
+    font-weight: var(--fontBold);
+  }
   .indhold {
     display: grid;
-    @media (min-width: 900px) {
+  }
+  @media (min-width: 900px) {
+    .indhold {
       grid-template-columns: 1fr 1fr;
     }
   }
+
   article {
     padding: 10px;
   }
@@ -197,6 +204,7 @@ import Slider from "./Slider.astro";
     align-items: center;
     display: flex;
     width: 80%;
+    margin: auto;
   }
   .header {
     display: flex;
