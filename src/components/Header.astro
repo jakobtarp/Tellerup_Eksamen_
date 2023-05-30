@@ -47,7 +47,7 @@ import "../styles/global.css";
 
       <!-- burgermenu -->
       <input type="checkbox" id="hamburger-input" class="burger-shower" />
-      <label id="hamburger-menu" for="hamburger-input">
+      <label id="hamburger-menu" for="hamburger-input" aria-haspopup="true">
         <div class="burger-icon">
           <span></span>
           <span></span>
@@ -66,7 +66,7 @@ import "../styles/global.css";
             <div class="margin-stroke"></div>
 
             <div class="dropdown">
-              <div class="dropdown-title">
+              <div class="dropdown-title" aria-haspopup="true">
                 Kategori
                 <!-- pil -->
                 <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -81,7 +81,7 @@ import "../styles/global.css";
             <div class="stroke"></div>
 
             <div class="dropdown">
-              <div class="dropdown-title">
+              <div class="dropdown-title" aria-haspopup="true" >
                 Forfattere
                 <!-- pil -->
                 <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -97,7 +97,7 @@ import "../styles/global.css";
             <div class="stroke"></div>
 
             <div class="dropdown">
-              <div class="dropdown-title">
+              <div class="dropdown-title"aria-haspopup="true">
                 Aldersgrupper
                 <!-- pil -->
                 <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -136,7 +136,7 @@ import "../styles/global.css";
     <!-- desktop search -->
     <ul class="navLeft">
       <!-- kategori -->
-      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown">
+      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
         <button @click="open = !open" class="kategori">
           <h2>Kategori</h2>
           <!-- pil -->
@@ -179,7 +179,7 @@ import "../styles/global.css";
         </div>
       </div>
       <!-- Forfattere -->
-      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown">
+      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
         <button @click="open = !open" class="forfattere">
           <h2>Forfattere</h2>
           <!-- pil -->
@@ -224,7 +224,7 @@ import "../styles/global.css";
         </div>
       </div>
       <!-- Aldersgrupper -->
-      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown">
+      <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
         <button @click="open = !open" class="aldersgrupper">
           <h2>Aldersgrupper</h2>
           <!-- pil -->
