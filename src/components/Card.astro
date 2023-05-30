@@ -7,8 +7,8 @@ import Button from "./Button.astro";
   <div>
     <slot />
   </div>
-  <h3 class="text-white text-md">{header}</h3>
-  <p class="text-gray-500 text-sm">{description}</p>
+  <h3 class="text-white text-md" aria-label="title">{header}</h3>
+  <p class="text-gray-500 text-sm" aria-label="description of book">{description}</p>
 </article>
 
 <!-- 

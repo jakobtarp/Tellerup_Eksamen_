@@ -38,20 +38,20 @@ import Slider from "./Slider.astro";
       <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
     </div>
     <!-- Resumé -->
-    <h2>Resumé:</h2>
+    <h2 aria-label="resume">Resumé:</h2>
     <p>{resume} <Button link="#resume" variant="tertiary" style="black">Læs mere</Button></p>
     <!-- Format -->
 
     <!-- Format -->
     <div>
-      <h2>Vælg format:</h2>
+      <h2 aria-label="vælg format">Vælg format:</h2>
       <div class="formater">
         <div class="box border_active">
           <div></div>
           <div class="info_format">
             <img src="/indbunden.webp" alt="book" width="35px" role="img" aria-label="book" />
             <div class="title_format">
-              <h3>Indbunden</h3>
+              <p aria-label="indbunden">Indbunden</p>
               <p><strong>{pris_indbunden} DKK</strong></p>
             </div>
             <p><s>{tidligere_pris_indbunden}</s></p>
@@ -66,8 +66,8 @@ import Slider from "./Slider.astro";
           <div class="info_format">
             <img src="/ebog.webp" alt="book" width="25px" role="img" aria-label="book" />
             <div class="title_format">
-              <h3>E-bog</h3>
-              <p><strong>{pris_ebog} DKK</strong></p>
+              <h3 aria-label="e-bog">E-bog</h3>
+              <h3><strong>{pris_ebog} DKK</strong></h3>
             </div>
             <p><s>{tidligere_pris_ebog}</s></p>
           </div>
@@ -81,8 +81,8 @@ import Slider from "./Slider.astro";
           <div class="info_format">
             <img src="/lydbog.webp" alt="book" width="35px" role="img" aria-label="book" />
             <div class="title_format">
-              <h3>Lydbog</h3>
-              <p><strong>{pris_lydbog} DKK</strong></p>
+              <h3 aria-label="lydbog">Lydbog</h3>
+              <h3><strong>{pris_lydbog} DKK</strong></h3>
             </div>
             <p><s>{tidligere_pris_lydbog}</s></p>
           </div>
@@ -108,7 +108,7 @@ import Slider from "./Slider.astro";
           <div class="lager_box">
             <img src="/check.webp" alt="check icon" role="img" aria-label="check icon" />
           </div>
-          <p class="lager_tekst">På lager</p>
+          <p class="lager_tekst" aria-label="på lager">På lager</p>
         </div>
         <p>Afs. {levering} hverdage</p>
       </div>
@@ -117,11 +117,11 @@ import Slider from "./Slider.astro";
 
   <article>
     <div id="resume">
-      <h2>Resumé:</h2>
+      <h2 aria-label="resume">Resumé:</h2>
       <p>{resume_lang}</p>
     </div>
     <div>
-      <h2>Tags</h2>
+      <h2 aria-label="tags">Tags</h2>
       <div class="tags_button">
         <Button link="kategoriside.html" variant="tags" style="white" size="tags">Fantasy</Button>
         <Button link="kategoriside.html" variant="tags" style="white" size="tags">Krimi</Button>
@@ -130,7 +130,7 @@ import Slider from "./Slider.astro";
     </div>
   </article>
   <article>
-    <h2>Detaljer</h2>
+    <h2 aria-label="detaljer">Detaljer</h2>
     <hr class="solid" />
     <div class="detaljer_box">
       <div class="detaljer_info">
@@ -138,15 +138,15 @@ import Slider from "./Slider.astro";
         <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
       </div>
       <div class="detaljer_info">
-        <p>Forlag:</p>
+        <p aria-label="forlag">Forlag:</p>
         <p>{forlag}</p>
       </div>
       <div class="detaljer_info">
-        <p>Udgave:</p>
+        <p aria-label="udgave">Udgave:</p>
         <p>{udgave}</p>
       </div>
       <div class="detaljer_info">
-        <p>EAN:</p>
+        <p aria-label="ean">EAN:</p>
         <p>{EAN}</p>
       </div>
     </div>
