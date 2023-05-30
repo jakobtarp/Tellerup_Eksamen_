@@ -8,11 +8,7 @@ import Slider from "./Slider.astro";
 ---
 
 <section>
-<<<<<<< HEAD
   <article class="brødskrummer">
-=======
-  <div class="brødskrummer">
->>>>>>> master
     <Button link="/index.html" variant="tertiary" style="red">Tellerup</Button>
     <div class="arrow">&#10095;</div>
     <Button link="/genre.html" variant="tertiary" style="red">Genre</Button>
@@ -20,14 +16,14 @@ import Slider from "./Slider.astro";
     <Button link="/kategoriside.html" variant="tertiary" style="red">Bøger</Button>
     <div class="arrow">&#10095;</div>
     <Button link="kategoriside.html" variant="tertiary" style="red">Større end os</Button>
-  </div>
+  </article>
 </section>
 <section class="indhold">
   <article>
     <!-- Brødkrummer -->
 
     <!-- Billede -->
-    <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" role="img" aria-label="book"/></div>
+    <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" role="img" aria-label="book" /></div>
   </article>
   <article>
     <div class="header">
@@ -53,7 +49,7 @@ import Slider from "./Slider.astro";
         <div class="box border_active">
           <div></div>
           <div class="info_format">
-            <img src="/indbunden.webp" alt="book" width="35px" role="img" aria-label="book"/>
+            <img src="/indbunden.webp" alt="book" width="35px" role="img" aria-label="book" />
             <div class="title_format">
               <h3>Indbunden</h3>
               <p><strong>{pris_indbunden} DKK</strong></p>
@@ -61,14 +57,14 @@ import Slider from "./Slider.astro";
             <p><s>{tidligere_pris_indbunden}</s></p>
           </div>
           <div class="check_active">
-            <img class="red_check" src="/check.webp" alt="check" role="img" aria-label="book"/>
+            <img class="red_check" src="/check.webp" alt="check" role="img" aria-label="book" />
           </div>
         </div>
 
         <div class="box">
           <div></div>
           <div class="info_format">
-            <img src="/ebog.webp" alt="book" width="25px" role="img" aria-label="book"/>
+            <img src="/ebog.webp" alt="book" width="25px" role="img" aria-label="book" />
             <div class="title_format">
               <h3>E-bog</h3>
               <h3><strong>{pris_ebog} DKK</strong></h3>
@@ -83,7 +79,7 @@ import Slider from "./Slider.astro";
         <div class="box">
           <div></div>
           <div class="info_format">
-            <img src="/lydbog.webp" alt="book" width="35px" role="img" aria-label="book"/>
+            <img src="/lydbog.webp" alt="book" width="35px" role="img" aria-label="book" />
             <div class="title_format">
               <h3>Lydbog</h3>
               <h3><strong>{pris_lydbog} DKK</strong></h3>
@@ -110,7 +106,7 @@ import Slider from "./Slider.astro";
       <div class="tilbage">
         <div class="lager">
           <div class="lager_box">
-            <img src="/check.webp" alt="check icon" role="img" aria-label="check icon"/>
+            <img src="/check.webp" alt="check icon" role="img" aria-label="check icon" />
           </div>
           <p class="lager_tekst">På lager</p>
         </div>
