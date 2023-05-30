@@ -30,10 +30,12 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
       <img class="w-44" src="/tellerup_logo3_primaer.webp" alt="Tellerup logo" role="img" aria-label="Tellerup logo" />
       <p>Tellerup er et af de førende danske forlag med fokus på børne- og ungdomsbøger. Oprindeligt blev forlaget grundlagt i 1972 af skolelærer Kristian Tellerup. Han havde skrevet en sød lille historie om Preben Ræv, som intet forlag havde lyst til at udgive, og så gjorde han det selv! Preben Ræv blev forlagets logo – den hylende ræv – og bogen blev genudgivet i en 40-års- jubilæumsudgave i 2012.</p>
       <div class="grid gap-2 mt-5 mb-10">
-        <h2>Kontakt</h2>
-        <p>Telefon: (+45) 00 00 00 00</p>
-        <p>Email: info@tellerup.dk</p>
-        <p>Rævensvej 111, Rævløse 2200</p>
+        <ul>
+          <li><h2>Kontakt</h2></li>
+          <li><p>Telefon: (+45) 00 00 00 00</p></li>
+          <li><p>Email: info@tellerup.dk</p></li>
+          <li><p>Rævensvej 111, Rævløse 2200</p></li>
+        </ul>
       </div>
     </div>
     <div class="right lg:col-start-3 mt-8 mb-5 lg:mt-10">
@@ -67,101 +69,105 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
           </ul>
         </div>
       </div>
-      <div class="pay h-7 flex mt-6 gap-1 mb-3">
-        <ul>
+
+      <ul class="pay flex gap-1 w-64 mt-10">
+        <li>
+          <figure>
+            <img class="my-auto" src="/visa.webp" alt="Visa card" role="img" aria-label="visa card icon" />
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <figure>
+              <img class="my-auto" src="/visaelectron.webp" alt="Visa Elektron" role="img" aria-label="visa electron card icon" />
+            </figure>
+          </figure>
           <li>
             <figure>
-              <img src="/visa.webp" alt="Visa card" role="img" aria-label="visa card icon" />
+              <img class="my-auto" src="/mastercard.webp" alt="Mastercard" role="img" aria-label="mastercard card icon" />
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/visaelectron.webp" alt="Visa Elektron" role="img" aria-label="visa electron card icon" />
+              <img class="my-auto" src="/gavekort.webp" alt="Gavekort" role="img" aria-label="giftcard" />
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/mastercard.webp" alt="Mastercard" role="img" aria-label="mastercard card icon" />
+              <img class="my-auto" src="/mobilpay.webp" alt="Mobilpay" role="img" aria-label="mobilepay icon" />
             </figure>
           </li>
           <li>
             <figure>
-              <img src="/gavekort.webp" alt="Gavekort" role="img" aria-label="giftcard" />
+              <img class="my-auto" src="/dk.webp" alt="Dankort" role="img" aria-label="dankort card icon" />
             </figure>
           </li>
-          <li>
-            <figure>
-              <img src="/mobilpay.webp" alt="Mobilpay" role="img" aria-label="mobilepay icon" />
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="/dk.webp" alt="Dankort" role="img" aria-label="dankort card icon" />
-            </figure>
-          </li>
-        </ul>
-      </div>
+        </li>
+      </ul>
     </div>
+
+    <style>
+      .pay img {
+        width: 40px;
+      }
+      .spacing {
+        padding-left: var(--globalPaddingL);
+        padding-right: var(--globalPaddingL);
+      }
+      .search {
+        border-radius: var(--globalBorderRadiusL);
+        padding-right: var(--globalPaddingXl);
+        padding-left: 6px;
+
+        padding-bottom: ;
+        background-color: white;
+      }
+      .nyhedsbrev {
+        background-color: var(--middleblue);
+      }
+
+      .sociale img {
+        cursor: pointer;
+      }
+
+      .right p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      ul h2 {
+        font-weight: var(--fontBold);
+        font-size: var(--font-size-md);
+      }
+
+      p {
+        font-weight: var(--fontNormal);
+        /* font-size: var(--font-size-base); */
+      }
+
+      input {
+        height: 40px;
+        /* font-size: var(--font-size-base); */
+      }
+
+      .tilmeld {
+        color: var(--white);
+        font-size: var(--font-size-md);
+        font-weight: var(--fontBold);
+      }
+
+      .tilbud {
+        color: var(--white);
+        /* font-size: var(--font-size-base); */
+      }
+
+      button {
+        border-radius: 24px;
+      }
+
+      .mainfooter {
+        background-color: var(--lightblue);
+      }
+    </style>
   </div>
-
-  <style>
-    .spacing {
-      padding-left: var(--globalPaddingL);
-      padding-right: var(--globalPaddingL);
-    }
-    .search {
-      border-radius: var(--globalBorderRadiusL);
-      padding-right: var(--globalPaddingXl);
-      padding-left: 6px;
-
-      padding-bottom: ;
-      background-color: white;
-    }
-    .nyhedsbrev {
-      background-color: var(--middleblue);
-    }
-
-    .sociale img {
-      cursor: pointer;
-    }
-
-    .right p:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    h2 {
-      font-weight: var(--fontBold);
-      font-size: var(--font-size-md);
-    }
-
-    p {
-      font-weight: var(--fontNormal);
-      /* font-size: var(--font-size-base); */
-    }
-
-    input {
-      height: 40px;
-      /* font-size: var(--font-size-base); */
-    }
-
-    .tilmeld {
-      color: var(--white);
-      font-size: var(--font-size-md);
-      font-weight: var(--fontBold);
-    }
-
-    .tilbud {
-      color: var(--white);
-      /* font-size: var(--font-size-base); */
-    }
-
-    button {
-      border-radius: 24px;
-    }
-
-    .mainfooter {
-      background-color: var(--lightblue);
-    }
-  </style>
 </article>
