@@ -19,11 +19,9 @@ import Slider from "./Slider.astro";
   </article>
 </section>
 <section class="indhold">
-  <article>
-    <!-- Brødkrummer -->
-
-    <!-- Billede -->
-    <div class="billede_container"><img class="billede" src={img} alt="produktbillede" height="350" width="350" role="img" aria-label="book" /></div>
+  <!-- Billede -->
+  <article class="billede_container">
+    <img class="billede" src={img} alt="produktbillede" height="350" width="350" />
   </article>
   <article>
     <div class="header">
@@ -31,7 +29,9 @@ import Slider from "./Slider.astro";
         <h3>{type}</h3>
         <h1>{title}</h1>
       </div>
-      <img src="/heart.svg" />
+      <figure class="heart">
+        <img src="/heart.svg" />
+      </figure>
     </div>
     <div class="forfattare">
       <p>Af</p>
@@ -67,9 +67,9 @@ import Slider from "./Slider.astro";
             <img src="/ebog.webp" alt="book" width="25px" role="img" aria-label="book" />
             <div class="title_format">
               <h3>E-bog</h3>
-              <h3><strong>{pris_ebog} DKK</strong></h3>
+              <p><strong>{pris_ebog} DKK</strong></p>
             </div>
-            <h3><s>{tidligere_pris_ebog}</s></h3>
+            <p><s>{tidligere_pris_ebog}</s></p>
           </div>
           <div class="check">
             <!-- <img class="red_check" src="/check.webp" alt="check" /> -->
@@ -82,9 +82,9 @@ import Slider from "./Slider.astro";
             <img src="/lydbog.webp" alt="book" width="35px" role="img" aria-label="book" />
             <div class="title_format">
               <h3>Lydbog</h3>
-              <h3><strong>{pris_lydbog} DKK</strong></h3>
+              <p><strong>{pris_lydbog} DKK</strong></p>
             </div>
-            <h3><s>{tidligere_pris_lydbog}</s></h3>
+            <p><s>{tidligere_pris_lydbog}</s></p>
           </div>
           <div class="check">
             <!-- <img class="red_check" src="/check.webp" alt="check" /> -->
@@ -162,9 +162,6 @@ import Slider from "./Slider.astro";
   h1 {
     margin-block: 20px;
   }
-  h3 {
-    font-weight: bold;
-  }
 
   p {
     max-width: 65ch;
@@ -173,6 +170,7 @@ import Slider from "./Slider.astro";
     padding-top: 20px;
     padding-bottom: 5px;
   }
+
   .indhold {
     display: grid;
     @media (min-width: 900px) {
