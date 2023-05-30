@@ -7,7 +7,7 @@ h2 {
   font-size: var(--font-size-md);
 }
 h3 {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
 }
 h4 {
   font-size: var(--font-size-sm);
