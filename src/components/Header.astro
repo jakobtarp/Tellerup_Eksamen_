@@ -8,17 +8,17 @@ import "../styles/global.css";
 <header>
   <div class="banner">
     <div class="levering">
-      <svg class="closeBanner" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" stroke-miterlimit="1.5" d="M8 19a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"></path><path d="M10.05 17H15V6.6a.6.6 0 0 0-.6-.6H1m4.65 11H3.6a.6.6 0 0 1-.6-.6v-4.9"></path><path stroke-linejoin="round" d="M2 9h4"></path><path d="M15 9h5.61a.6.6 0 0 1 .548.356l1.79 4.028a.6.6 0 0 1 .052.243V16.4a.6.6 0 0 1-.6.6h-1.9M15 17h1"></path></g></svg>
+      <svg class="closeBanner" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" stroke-miterlimit="1.5" d="M8 19a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"></path><path d="M10.05 17H15V6.6a.6.6 0 0 0-.6-.6H1m4.65 11H3.6a.6.6 0 0 1-.6-.6v-4.9"></path><path stroke-linejoin="round" d="M2 9h4"></path><path d="M15 9h5.61a.6.6 0 0 1 .548.356l1.79 4.028a.6.6 0 0 1 .052.243V16.4a.6.6 0 0 1-.6.6h-1.9M15 17h1"></path></g></svg>
       <h4 class="closeBanner" aria-label="Levering: 1-3 hverdage" >Levering: 1-3 hverdage</h4>
     </div>
     <div class="trustpilot">
       <h4 aria-label="trustpilot">Trustpilot</h4>
       <div class="rating">
-        <span class="full" aria-label="Fuld stjerne"></span>
-        <span class="full" aria-label="Fuld stjerne"></span>
-        <span class="full" aria-label="Fuld stjerne"></span>
-        <span class="full" aria-label="Fuld stjerne"></span>
-        <span class="unset" aria-label="Tom stjerne"></span>
+        <span class="full" ></span>
+        <span class="full" ></span>
+        <span class="full" ></span>
+        <span class="full" ></span>
+        <span class="unset"></span>
       </div>
     </div>
     <h4 class="closeBanner" aria-label="Gratis levering ved køb over 300 DKK">Gratis levering ved køb over 300 DKK</h4>
@@ -29,21 +29,17 @@ import "../styles/global.css";
       <img src="/tellerup_logo3_primaer.webp" alt="Tellerup logo" class="logo" role="img" aria-label="Tellerup logo" />
     </a>
     <div class="search-container">
-      <input type="text" class="search-input" id="searchInput" placeholder="Søg..." />
-      <!-- <button>
-        <span class="search-icon"><i class="fas fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471c185.856 0 336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527z"></path></svg></i></span>
-      </button> -->
+      <input type="text" id="search-input" id="searchInput" placeholder="Søg..." />
     </div>
-
     <div class="icons">
       <a href="/profil.html">
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M5.85 17.1q1.275-.975 2.85-1.538T12 15q1.725 0 3.3.563t2.85 1.537q.875-1.025 1.363-2.325T20 12q0-3.325-2.337-5.663T12 4Q8.675 4 6.337 6.337T4 12q0 1.475.488 2.775T5.85 17.1ZM12 13q-1.475 0-2.488-1.012T8.5 9.5q0-1.475 1.012-2.488T12 6q1.475 0 2.488 1.012T15.5 9.5q0 1.475-1.012 2.488T12 13Zm0 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M5.85 17.1q1.275-.975 2.85-1.538T12 15q1.725 0 3.3.563t2.85 1.537q.875-1.025 1.363-2.325T20 12q0-3.325-2.337-5.663T12 4Q8.675 4 6.337 6.337T4 12q0 1.475.488 2.775T5.85 17.1ZM12 13q-1.475 0-2.488-1.012T8.5 9.5q0-1.475 1.012-2.488T12 6q1.475 0 2.488 1.012T15.5 9.5q0 1.475-1.012 2.488T12 13Zm0 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"></path></svg>
       </a>
       <a href="/favorit.html" class="favoritter">
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"></path></svg>
       </a>
       <a href="/kurv.html">
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M19 22H5q-.825 0-1.413-.588T3 20V8q0-.825.588-1.413T5 6h2q0-2.075 1.463-3.538T12 1q2.075 0 3.538 1.463T17 6h2q.825 0 1.413.588T21 8v12q0 .825-.588 1.413T19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12h14Zm-7-6q1.85 0 3.35-1.225t1.475-2.75q0-.425-.275-.725t-.7-.3q-.35 0-.625.225t-.4.675q-.275.95-1.075 1.525T12 12q-.95 0-1.762-.575T9.175 9.9q-.125-.475-.375-.688T8.2 9q-.425 0-.712.3t-.288.725q0 1.525 1.475 2.75T12 14ZM5 8v12V8Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="M19 22H5q-.825 0-1.413-.588T3 20V8q0-.825.588-1.413T5 6h2q0-2.075 1.463-3.538T12 1q2.075 0 3.538 1.463T17 6h2q.825 0 1.413.588T21 8v12q0 .825-.588 1.413T19 22ZM9 6h6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Zm10 14V8H5v12h14Zm-7-6q1.85 0 3.35-1.225t1.475-2.75q0-.425-.275-.725t-.7-.3q-.35 0-.625.225t-.4.675q-.275.95-1.075 1.525T12 12q-.95 0-1.762-.575T9.175 9.9q-.125-.475-.375-.688T8.2 9q-.425 0-.712.3t-.288.725q0 1.525 1.475 2.75T12 14ZM5 8v12V8Z"></path></svg>
       </a>
 
       <!-- burgermenu -->
@@ -57,10 +53,10 @@ import "../styles/global.css";
 
         <nav id="sidebar-menu">
           <div class="headerOpenBurger">
-            <a href="/index.html">
+            <a href="/index.html" aria-label="Gå til forside">
               <img src="/tellerup_logo3_primaer.webp" alt="Tellerup logo" class="Tellerup logo" role="img" aria-label="Tellerup logo" />
             </a>
-            <span class="iconX"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" color="#080707"><path d="M39 10.44 37.56 9 24 22.56 10.44 9 9 10.44 22.56 24 9 37.56 10.44 39 24 25.44 37.56 39 39 37.56 25.44 24 39 10.44z"></path></svg></span>
+            <span class="iconX"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" color="#080707"><path d="M39 10.44 37.56 9 24 22.56 10.44 9 9 10.44 22.56 24 9 37.56 10.44 39 24 25.44 37.56 39 39 37.56 25.44 24 39 10.44z"></path></svg></span>
           </div>
 
           <ul>
@@ -70,13 +66,13 @@ import "../styles/global.css";
               <div class="dropdown-title" aria-haspopup="true">
                 Kategorier
                 <!-- pil -->
-                <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </div>
               <div class="dropdown-content">
-                <a href="/kategoriside.html">Alle bøger</a>
-                <a href="/kategoriside.html">Bestsellers</a>
-                <a href="/kategoriside.html">Nyheder</a>
-                <a href="/genre.html">Genre</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Alle bøger</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Bestsellers</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Nyheder</a>
+                <a href="/genre.html" aria-label="Gå til genrer">Genre</a>
               </div>
             </div>
             <div class="stroke"></div>
@@ -85,14 +81,14 @@ import "../styles/global.css";
               <div class="dropdown-title" aria-haspopup="true">
                 Forfattere
                 <!-- pil -->
-                <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </div>
               <div class="dropdown-content">
-                <a href="/kategoriside.html">Christina Bonde</a>
-                <a href="/kategoriside.html">Line Wenzel</a>
-                <a href="/kategoriside.html">Louise Hailberg</a>
-                <a href="/kategoriside.html">Line Wenzel</a>
-                <a href="/forfattere.html" class="seForfattere">Se alle</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Christina Bonde</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Line Wenzel</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Louise Hailberg</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Line Wenzel</a>
+                <a href="/forfattere.html" aria-label="Gå til forfattere" class="seForfattere">Se alle</a>
               </div>
             </div>
             <div class="stroke"></div>
@@ -101,26 +97,26 @@ import "../styles/global.css";
               <div class="dropdown-title" aria-haspopup="true">
                 Aldersgrupper
                 <!-- pil -->
-                <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </div>
               <div class="dropdown-content">
-                <a href="/kategoriside.html">0 - 2 år</a>
-                <a href="/kategoriside.html">3 - 5 år</a>
-                <a href="/kategoriside.html">6 - 10 år</a>
-                <a href="/kategoriside.html">10 - 15 år</a>
-                <a href="/kategoriside.html">Over 15 år</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">0 - 2 år</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">3 - 5 år</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">6 - 10 år</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">10 - 15 år</a>
+                <a href="/kategoriside.html" aria-label="Gå til kategorier">Over 15 år</a>
               </div>
             </div>
             <div class="stroke"></div>
 
-            <li><a class="font-semibold" href="kategoriside.html">Tilbud</a></li>
+            <li><a class="font-semibold" href="kategoriside.html" aria-label="Gå til kategorier">Tilbud</a></li>
             <div class="stroke"></div>
 
-            <li><a class="headbold font-semibold" href="kategoriside.html">Undervisningsmateriale</a></li>
+            <li><a class="headbold font-semibold" href="kategoriside.html" aria-label="Gå til undervisningsmateriale">Undervisningsmateriale</a></li>
             <div class="stroke"></div>
             <li class="containerFavoritter">
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"></path></svg>
-              <a href="favorit.html">Favoritter</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="black" d="m10.65 19.8l-1.725-1.575q-2.65-2.425-4.788-4.813T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.538t2.5-.562q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.575.55-1.35.55t-1.35-.55Zm.4-13.05q-.725-1.025-1.55-1.563t-2-.537q-1.5 0-2.5 1t-1 2.5q0 1.3.925 2.763t2.213 2.837q1.287 1.375 2.65 2.575T12 18.3q.85-.775 2.213-1.975t2.65-2.575q1.287-1.375 2.212-2.837T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2 .537T12.95 6.75q-.175.25-.425.375T12 7.25q-.275 0-.525-.125t-.425-.375Zm.95 4.725Z"></path></svg>
+              <a href="favorit.html" aria-label="Gå til favoritter">Favoritter</a>
             </li>
           </ul>
         </nav>
@@ -131,17 +127,17 @@ import "../styles/global.css";
   <div class="navHeader">
     <!-- mobile search -->
     <div class="search-container">
-      <input type="text" class="search-input" id="searchInput" placeholder="Søg..." />
-      <span class="search-icon"><i class="fas fa-search"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471c185.856 0 336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527z"></path></svg></i></span>
+      <input type="text" id="search-input" id="searchInput" placeholder="Søg..." />
+      <span class="search-icon"><i class="fas fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471c185.856 0 336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527z"></path></svg></i></span>
     </div>
     <!-- desktop search -->
     <ul class="navLeft">
       <!-- kategori -->
       <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
-        <button @click="open = !open" class="kategori">
-          <h2 aria-label="Kategori">Kategori</h2>
+        <button @click="open = !open" class="kategori" aria-label="Kategori">
+          <h2>Kategori</h2>
           <!-- pil -->
-          <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         </button>
 
         <div class="dropdownContainer grid grid-cols-2">
@@ -149,30 +145,30 @@ import "../styles/global.css";
             <div class="grid grid-cols-4 mr-auto mt-3">
               <div>
                 <li>
-                  <a href="/kategoriside.html">Alle bøger</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Alle bøger</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Bestsellers</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Bestsellers</a>
                 </li>
                 <li>
-                  <a href="/genre.html">Genre</a>
+                  <a href="/genre.html" aria-label="Gå til genrer">Genre</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Notesbøger</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Notesbøger</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="/kategoriside.html">Bogserier</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Bogserier</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Indbundne bøger</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Indbundne bøger</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Lydbøger</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Lydbøger</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">E-bøger</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">E-bøger</a>
                 </li>
               </div>
             </div>
@@ -181,43 +177,43 @@ import "../styles/global.css";
       </div>
       <!-- Forfattere -->
       <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
-        <button @click="open = !open" class="forfattere">
-          <h2 aria-label="Forfattere">Forfattere</h2>
+        <button @click="open = !open" class="forfattere" aria-label="Forfattere">
+          <h2>Forfattere</h2>
           <!-- pil -->
-          <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         </button>
         <div class="dropdownContainer">
           <ul x-show="open" class="dropdown-content">
             <div class="grid grid-cols-8 mt-3">
               <div>
                 <li>
-                  <a href="/kategoriside.html">Christina Bonde</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Christina Bonde</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Line Wenzel</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Line Wenzel</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Louise Hailberg</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Louise Hailberg</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Line Wenzel</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Line Wenzel</a>
                 </li>
                 <li class="seForfattere">
-                  <a href="/kategoriside.html">Se alle</a>
+                  <a href="/kategoriside.html" aria-label="Gå til forfattere">Se alle</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="/kategoriside.html">Willam E. Iversen</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Willam E. Iversen</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html ml-5">Emilie Vader</a>
+                  <a href="/kategoriside.html ml-5" aria-label="Gå til kategorier">Emilie Vader</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Julie Lykke</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Julie Lykke</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Martin Pedersen</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Martin Pedersen</a>
                 </li>
               </div>
             </div>
@@ -226,31 +222,31 @@ import "../styles/global.css";
       </div>
       <!-- Aldersgrupper -->
       <div x-data="{ open: false }" @click.away="open = false" @mouseover="open = true" @mouseleave="open = false" class="dropdown" aria-haspopup="true">
-        <button @click="open = !open" class="aldersgrupper">
-          <h2 aria-label="Aldersgrupper">Aldersgrupper</h2>
+        <button @click="open = !open" class="aldersgrupper" aria-label="Aldersgrupper">
+          <h2>Aldersgrupper</h2>
           <!-- pil -->
-          <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         </button>
         <div class="dropdownContainer">
           <ul x-show="open" class="dropdown-content">
             <div class="grid grid-cols-4 mr-auto mt-3">
               <div>
                 <li>
-                  <a href="/kategoriside.html">0 - 2 år</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">0 - 2 år</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">3 - 5 år</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">3 - 5 år</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">6 - 10 år</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">6 - 10 år</a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="/kategoriside.html">10 - 15 år</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">10 - 15 år</a>
                 </li>
                 <li>
-                  <a href="/kategoriside.html">Over 15 år</a>
+                  <a href="/kategoriside.html" aria-label="Gå til kategorier">Over 15 år</a>
                 </li>
               </div>
             </div>
@@ -258,16 +254,16 @@ import "../styles/global.css";
         </div>
       </div>
       <li>
-        <a href="/kategoriside.html" class="tilbud">
+        <a href="/kategoriside.html" class="tilbud" aria-label="Gå til tilbud">
           <h2 aria-label="Tilbud">Tilbud</h2>
         </a>
       </li>
     </ul>
 
-    <button class="undervisningsmateriale">
-      <h2 aria-label="Undervisningsmateriale">Undervisningsmateriale</h2>
+    <button class="undervisningsmateriale" aria-label="Undervisningsmateriale">
+      <h2>Undervisningsmateriale</h2>
       <!-- pil -->
-      <!-- <svg class="arrow" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg> -->
+      <!-- <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg> -->
     </button>
   </div>
 </header>
@@ -844,7 +840,7 @@ import "../styles/global.css";
       padding: 10px;
     }
 
-    .search-input {
+    #search-input {
       border: none;
       border-radius: 25px;
       padding: 10px;
