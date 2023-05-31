@@ -11,7 +11,9 @@ import Slider from "./Slider.astro";
   <article class="brødskrummer">
     <Button link="/index.html" variant="tertiary" style="red">Tellerup</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/genre.html" variant="tertiary" style="red">Genre</Button>
+    <Button link="/genre.html" variant="tertiary" style="red">Kategorier</Button>
+    <div class="arrow">&#10095;</div>
+    <Button link="/kategoriside.html" variant="tertiary" style="red">Genre</Button>
     <div class="arrow">&#10095;</div>
     <Button link="/kategoriside.html" variant="tertiary" style="red">Bøger</Button>
     <div class="arrow">&#10095;</div>
@@ -30,7 +32,7 @@ import Slider from "./Slider.astro";
         <h1>{title}</h1>
       </div>
       <figure class="heart">
-        <img src="/heart.svg" />
+        <img src="/heart.svg" width="30px" />
       </figure>
     </div>
     <div class="forfattare">
@@ -153,11 +155,13 @@ import Slider from "./Slider.astro";
   </article>
 </section>
 <section>
-  <Genre />
-</section>
-<section>
   <Slider />
 </section>
+
+<section>
+  <Genre />
+</section>
+
 <style>
   h1 {
     margin-block: 20px;
@@ -191,8 +195,8 @@ import Slider from "./Slider.astro";
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
-    margin-block: 40px;
+    gap: 10px;
+    margin-block: 15px;
   }
 
   .arrow {
@@ -231,6 +235,12 @@ import Slider from "./Slider.astro";
     flex-wrap: wrap;
   }
 
+  @media (max-width: 900px) {
+    .formater {
+      justify-content: center;
+    }
+  }
+
   .box {
     border-radius: 20px;
     border-color: var(--middleblue);
@@ -241,6 +251,7 @@ import Slider from "./Slider.astro";
     height: 130px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    cursor: pointer;
   }
 
   .info_format {
@@ -324,6 +335,12 @@ import Slider from "./Slider.astro";
     flex-wrap: wrap;
   }
 
+  @media (max-width: 900px) {
+    .knapper {
+      justify-content: center;
+    }
+  }
+
   .tilbage {
     @media (max-width: 900px) {
       order: -1;
@@ -333,7 +350,6 @@ import Slider from "./Slider.astro";
   .quantity {
     display: flex;
     align-items: center;
-    padding-left: 50px;
   }
 
   .quantity .count {
