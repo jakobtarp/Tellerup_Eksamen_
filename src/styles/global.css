@@ -62,7 +62,7 @@ body {
   --globalPaddingXs: 10px;
   --globalPaddingSm: 15px;
   --globalPaddingMd: 20px;
-  --globalPaddingL: 3%;
+  --globalPaddingL: 10%;
   --globalPaddingXl: 35px;
 
   /** Shadow */
