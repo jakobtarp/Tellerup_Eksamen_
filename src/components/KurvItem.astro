@@ -7,7 +7,7 @@ const { img, title, author, format, delivery, price } = Astro.props;
 <article>
   <div>
     <div class="imgContainer">
-      <a href="/singleview.html">
+      <a href="/singleview.html" aria-label="Se mere info om bog">
         <img src={img} alt="book by christina bonde" role="img" aria-label="book by Christina bunde"/>
       </a>
     </div>
@@ -21,7 +21,7 @@ const { img, title, author, format, delivery, price } = Astro.props;
   <slot />
   <div class="right">
     <h2>{price}</h2>
-    <Button link="/kurv.html" variant="ghost" style="red">Slet</Button>
+    <Button link="/kurv.html" variant="ghost" style="red" aria-label="Slet">Slet</Button>
   </div>
 </article>
 <style>

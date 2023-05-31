@@ -19,6 +19,8 @@ const { title, hasSearch } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Tellerup er et af de førende danske forlag med fokus på børne- og ungdomsbøger. " />
     <meta name="keywords" content="Tellerup, bøger, bogforlag" /><meta name="author" content="Tellerup" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- CSP - forhindrer XSS attacks -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600&display=swap" rel="stylesheet" />
     <title>{title}</title></head
   >
