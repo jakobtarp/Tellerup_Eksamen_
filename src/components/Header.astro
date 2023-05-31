@@ -31,9 +31,9 @@ import Button from "../components/Button.astro";
     </a>
     <div class="search-container">
       <input type="text" class="search-input" id="searchInput" placeholder="Søg..." />
-      <!-- <button>
+      <button>
         <span class="search-icon"><i class="fas fa-search"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471c185.856 0 336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527z"></path></svg></i></span>
-      </button> -->
+      </button>
     </div>
 
     <div class="icons">
@@ -147,7 +147,7 @@ import Button from "../components/Button.astro";
 
         <div class="dropdownContainer grid grid-cols-2">
           <ul x-show="open" class="dropdown-content">
-            <div class="grid grid-cols-4 mr-auto mt-3">
+            <div class="grid grid-cols-4 mr-80 mt-3">
               <div class="underCategories">
                 <li class="myDIV">
                   <a href="/kategoriside.html">Alle bøger</a>
@@ -189,7 +189,7 @@ import Button from "../components/Button.astro";
         </button>
         <div class="dropdownContainer">
           <ul x-show="open" class="dropdown-content">
-            <div class="grid grid-cols-8 mt-3">
+            <div class="grid grid-cols-5 mt-3">
               <div>
                 <li>
                   <a href="/kategoriside.html">Christina Bonde</a>
@@ -234,7 +234,7 @@ import Button from "../components/Button.astro";
         </button>
         <div class="dropdownContainer">
           <ul x-show="open" class="dropdown-content">
-            <div class="grid grid-cols-4 mr-auto mt-3">
+            <div class="grid grid-cols-4 mr-96 mt-3">
               <div>
                 <li>
                   <a href="/kategoriside.html">0 - 2 år</a>
@@ -412,8 +412,8 @@ import Button from "../components/Button.astro";
     }
     .mainheader .search-icon {
       position: absolute;
-      right: 10px;
-      top: 50%;
+      right: 610px;
+      top: 10%;
       transform: translateY(-50%);
       cursor: pointer;
       transition: color 0.3s ease-in-out;

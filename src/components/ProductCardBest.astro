@@ -2,13 +2,14 @@
 import "../styles/tokens.css";
 import "../styles/base.css";
 import "../styles/global.css";
-const { titel, imgPath, imgPath1, imgPath2, imgPath3, imgPath4, imgPath5, imgPath6, imgPath7, imgPath8, forfatter, part, price, anmeldser, newBadge } = Astro.props;
+const { titel, best, imgPath, imgPath1, imgPath2, imgPath3, imgPath4, imgPath5, imgPath6, imgPath7, imgPath8, forfatter, part, price, anmeldser, newBadge } = Astro.props;
 ---
 
 <article class="mt-5 lg:w-[250px] lg:h-[470px] w-[167px] h-[260px] shaddowcard mx-auto mb-2 hover:scale-105 transition duration-300 cursor-pointer">
   <a href="/singleview.html">
     <div class="grid imgcard relative">
-      {newBadge && <p class="badge absolute right-0 bottom-0 ">NYHED</p>}
+      {newBadge && <p class="badge absolute right-0 bottom-0">NYHED</p>}
+      <hp class="best absolute lg:-right-5 lg:-top-5 rounded-full -top-4 -right-2 py-5 lg:p-5">{best}</hp>
 
       <img class="imgradius mx-auto my-6 hidden lg:block" src={imgPath} alt="" height="250" width="170" />
 
@@ -86,5 +87,15 @@ const { titel, imgPath, imgPath1, imgPath2, imgPath3, imgPath4, imgPath5, imgPat
     font-weight: var(--fontBold);
     text-align: center;
     border-top-left-radius: var(--globalBorderRadiusSm);
+  }
+
+  .best {
+    color: var(--white);
+    font-size: var(--font-size-base);
+    width: 70px;
+
+    background-color: var(--royalblue);
+    font-weight: var(--fontBold);
+    text-align: center;
   }
 </style>
