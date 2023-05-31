@@ -4,20 +4,19 @@ import "../styles/tokens.css";
 import "../styles/global.css";
 import Button from "./Button.astro";
 import Genre from "./Genre.astro";
-import Slider from "./Slider.astro";
 ---
 
 <section>
   <article class="brødskrummer">
-    <Button link="/index.html" variant="tertiary" style="red">Tellerup</Button>
+    <Button link="/index.html" variant="tertiary" style="red" aria-label="Tellerup">Tellerup</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/genre.html" variant="tertiary" style="red">Kategorier</Button>
+    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Kategorier">Kategorier</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red">Genre</Button>
+    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Genre">Genre</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red">Bøger</Button>
+    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Bøger">Bøger</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="kategoriside.html" variant="tertiary" style="red">Større end os</Button>
+    <Button link="kategoriside.html" variant="tertiary" style="red" aria-label="Større end os bog">Større end os</Button>
   </article>
 </section>
 <section class="indhold">
@@ -32,16 +31,16 @@ import Slider from "./Slider.astro";
         <h1>{title}</h1>
       </div>
       <figure class="heart">
-        <img src="/heart.svg" width="30px" />
+        <img src="/heart.svg" width="30px" aria-label="Hjerte"/>
       </figure>
     </div>
     <div class="forfattare">
       <p>Af</p>
-      <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
+      <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Forfatter Christina Bonde">Christina Bonde</Button>
     </div>
     <!-- Resumé -->
     <h2 aria-label="resume">Resumé:</h2>
-    <p>{resume} <Button link="#resume" variant="tertiary" style="black">Læs mere</Button></p>
+    <p>{resume} <Button link="#resume" variant="tertiary" style="black" aria-label="Læs mere" >Læs mere</Button></p>
     <!-- Format -->
 
     <!-- Format -->
@@ -98,13 +97,13 @@ import Slider from "./Slider.astro";
     <!-- Købknap -->
     <div class="knapper">
       <div class="quantity">
-        <button class="minus">-</button>
+        <button class="minus" aria-label="Minus">-</button>
         <input type="text" class="count" value="1" />
-        <button class="plus">+</button>
+        <button class="plus" aria-label="Plus">+</button>
       </div>
 
       <!-- <img  src="/shopping-cart.webp" width="20px"> -->
-      <Button class="flex" link="kurv.html" variant="primary" size="big" style="white">Læg i kurv</Button>
+      <Button class="flex" link="kurv.html" variant="primary" size="big" style="white" aria-label="Læg i kurv">Læg i kurv</Button>
       <div class="tilbage">
         <div class="lager">
           <div class="lager_box">
@@ -125,9 +124,9 @@ import Slider from "./Slider.astro";
     <div>
       <h2 aria-label="tags">Tags</h2>
       <div class="tags_button">
-        <Button link="kategoriside.html" variant="tags" style="white" size="tags">Fantasy</Button>
-        <Button link="kategoriside.html" variant="tags" style="white" size="tags">Krimi</Button>
-        <Button link="kategoriside.html" variant="tags" style="white" size="tags">Romantik</Button>
+        <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Genre fantasy">Fantasy</Button>
+        <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Genre krimi">Krimi</Button>
+        <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Romantik">Romantik</Button>
       </div>
     </div>
   </article>
@@ -137,7 +136,7 @@ import Slider from "./Slider.astro";
     <div class="detaljer_box">
       <div class="detaljer_info">
         <p>Af:</p>
-        <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
+        <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Forfatter Christina Bonde">Christina Bonde</Button>
       </div>
       <div class="detaljer_info">
         <p aria-label="forlag">Forlag:</p>
@@ -153,9 +152,6 @@ import Slider from "./Slider.astro";
       </div>
     </div>
   </article>
-</section>
-<section>
-  <Slider />
 </section>
 
 <section>

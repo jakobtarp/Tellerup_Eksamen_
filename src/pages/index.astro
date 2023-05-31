@@ -4,7 +4,7 @@ import Fragt from "../components/Fragt.astro";
 import Genre from "../components/Genre.astro";
 import Button from "../components/Button.astro";
 import Label from "../components/Label.astro";
-import Slider from "../components/Slider.astro";
+import ProductCardSectionBest from "../components/ProductCardSectionBest.astro";
 // import Cookies from "../components/Cookies.astro";
 
 import "../styles/global.css";
@@ -23,7 +23,7 @@ keywords: "Tellerup, forside, hjem";
     <article class="heroArticle1">
       <div>
         <h1>Velkommen til Tellerups univers, <br /> fyldt med historier!</h1>
-        <Button link="/kategoriside.html" variant="primary" size="base" style="white">Se vores udvalg</Button>
+        <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="Se vores udvalg">Se vores udvalg</Button>
       </div>
     </article>
     <div class="heroArticle2">
@@ -32,6 +32,7 @@ keywords: "Tellerup, forside, hjem";
   </section>
   <!-- fragt section -->
   <section class="fragtContainer">
+    <h4 aria-hidden="true">Fragt informationer</h4>
     <div class="fragt">
       <figure>
         <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" role="img" aria-label="delivery img" />
@@ -63,7 +64,7 @@ keywords: "Tellerup, forside, hjem";
         </div>
         <div class="singleBottom">
           <h2>320 DKK</h2>
-          <Button link="/index.html" variant="primary" size="big" style="white">Forudbestil her</Button>
+          <Button link="/index.html" variant="primary" size="big" style="white" aria-label="Forudbestil her">Forudbestil her</Button>
         </div>
       </article>
       <span>
@@ -79,7 +80,7 @@ keywords: "Tellerup, forside, hjem";
       </div>
       <div class="boxContent">
         <h3>Bøger behøves ikke <br /> at koste alverden</h3>
-        <Button link="/kategoriside.html" variant="primary" size="base" style="white">Se vores tilbud</Button>
+        <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="Se vores tilbud">Se vores tilbud</Button>
       </div>
     </div>
     <div class="box" style="background-color: var(--darkvanilla);">
@@ -88,15 +89,13 @@ keywords: "Tellerup, forside, hjem";
       </div>
       <div class="boxContent">
         <h3>Bøger behøves ikke <br /> at koste alverden</h3>
-        <Button link="/kategoriside.html" variant="primary" size="base" style="white">Se vores tilbud</Button>
+        <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="Se vores tilbud">Se vores tilbud</Button>
       </div>
     </div>
   </section>
-  <!-- carussel -->
-  <!-- <section class="carusselSection">
-    <Slider />
-  </section> -->
-  <!-- genre -->
+  <section>
+    <ProductCardSectionBest />
+  </section>
   <section class="genreSection">
     <Genre />
   </section>
