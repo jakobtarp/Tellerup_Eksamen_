@@ -5,11 +5,9 @@ import MainHeader from "../components/MainHeader.astro";
 import "../styles/global.css";
 import "../styles/tokens.css";
 
-meta:
-title: 'genre'
-description: 'alle genre'
-keywords: 'genre'
-
+meta: title: "genre";
+description: "alle genre";
+keywords: "genre";
 ---
 
 <MainLayout title="Genrer">
@@ -37,7 +35,7 @@ keywords: 'genre'
   }
   @media (min-width: 300px) {
     .genre-section {
-      padding: 30px;
+      margin-inline: var(--globalPaddingL);
     }
   }
   @media (min-width: 400px) {

@@ -1,24 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-<<<<<<< HEAD
-
-=======
 import MainHeader from "../components/MainHeader.astro";
->>>>>>> madelene
+
 meta: title: "forfattere";
 description: "alle forfattere";
 keywords: "forfattere";
 ---
 
-<<<<<<< HEAD
-<MainLayout>
-  <main>
-    <h1>Forfattere</h1>
-=======
 <MainLayout title="forfattere">
   <MainHeader title="Forfattere" aria-label="forfattere" />
   <main>
->>>>>>> madelene
     <section>
       <article>
         <h2>A</h2>
@@ -95,8 +86,7 @@ keywords: "forfattere";
     margin-block: 30px;
   }
   main {
-    margin: 0 auto;
-    max-width: 1300px;
+    margin-inline: var(--globalPaddingL);
   }
   ol {
     display: grid;

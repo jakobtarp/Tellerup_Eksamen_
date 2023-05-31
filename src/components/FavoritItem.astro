@@ -7,7 +7,7 @@ const { img, title, author, format, delivery, price } = Astro.props;
 <article>
   <div class="imgContainer">
     <a href="/singleview.html">
-      <img src={img} alt="book" role="img" aria-label="book by Christine Bunde"/>
+      <img src={img} alt="book" role="img" aria-label="book by Christine Bunde" />
     </a>
     <a href="/singleview.html">
       <span class="label" data-message="series">Del 2 i serien</span>
@@ -73,7 +73,8 @@ const { img, title, author, format, delivery, price } = Astro.props;
     article {
       flex-direction: row;
       justify-content: space-between;
-      padding: 50px;
+      padding-block: 50px;
+      padding-inline: 25px;
     }
     .imgContainer {
       max-width: 300px;
