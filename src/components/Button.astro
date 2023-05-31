@@ -87,15 +87,15 @@ import "../styles/tokens.css";
     padding-inline: 25px;
 
     display: inline-block;
-
-    @media (max-width: 600px) {
+  }
+  @media (max-width: 600px) {
+    [data-size="base"] {
       font-size: 16px;
       padding-block: 6px;
-      padding-inline: 0;
+      padding-inline: 5px;
       width: 100%;
     }
   }
-
   [data-size="big"] {
     font-size: 18px;
     padding-block: 8px;
@@ -103,12 +103,14 @@ import "../styles/tokens.css";
     display: inline-block;
     /* display: flex;
     justify-content: center; */
+  }
 
-    @media (max-width: 600px) {
+  @media (max-width: 600px) {
+    [data-size="big"] {
       padding-block: 6px;
       width: 100%;
       font-size: 15px;
-      padding-inline: 0;
+      padding-inline: 10;
     }
   }
 
