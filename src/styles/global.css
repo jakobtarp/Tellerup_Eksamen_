@@ -67,7 +67,7 @@ body {
   --globalPaddingXl: 35px;
 
   /* spacing-inline, hele siden */
-  --globalPaddingL: 10%;
+  --globalPaddingL: 3%;
   /* spacing-buttom, inden footer */
   --globalPaddingFooter: 100px;
   /* spacing-top, inden indhold */
