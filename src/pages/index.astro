@@ -33,7 +33,7 @@ keywords: "Tellerup, forside, hjem";
     </section>
     <!-- fragt section -->
     <section class="fragtContainer">
-      <h4 class="screen-reader-only" aria-hidden="true">Fragt informationer</h4>
+      <h4 class="visually-hidden">Fragt informationer</h4>
       <div class="fragt">
         <figure>
           <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" role="img" aria-label="delivery img" />
@@ -104,6 +104,15 @@ keywords: "Tellerup, forside, hjem";
   </section>
 </MainLayout>
 <style>
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
   section {
     display: grid;
     gap: 50px;
