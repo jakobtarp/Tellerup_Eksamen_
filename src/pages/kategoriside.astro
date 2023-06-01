@@ -20,17 +20,29 @@ keywords: "kategori, kategorier";
     <!-- Brødskrummer -->
     <section class="brodkrummer">
       <Brodkrummer andre_side="Kategorier" />
+      <section class="hele_siden">
+        <Kategorifilter />
+        <section class="genre"><Genre /></section>
+      </section>
     </section>
-    <Kategorifilter />
-    <section class="genre"><Genre /></section>
   </main>
-</MainLayout>
 
-<style>
-  .genre {
-    margin-inline: var(--globalPaddingL);
-  }
-  .brodkrummer {
-    margin-left: 8px;
-  }
-</style>
+  <style>
+    .hele_siden {
+      display: grid;
+      gap: 50px;
+    }
+    .genre {
+      margin-inline: var(--globalPaddingL);
+    }
+    .brodkrummer {
+      margin-left: 8px;
+    }
+
+    @media only screen and (min-width: 900px) {
+      .hele_siden {
+        gap: 90px;
+      }
+    }
+  </style>
+</MainLayout>
