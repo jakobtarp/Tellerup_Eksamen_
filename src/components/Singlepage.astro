@@ -4,6 +4,7 @@ import "../styles/tokens.css";
 import "../styles/global.css";
 import Button from "./Button.astro";
 import Genre from "./Genre.astro";
+import ProductCardSectionBest from "../components/ProductCardSectionBest.astro";
 ---
 
 <section class="hele_side">
@@ -141,7 +142,7 @@ import Genre from "./Genre.astro";
       </div>
     </article>
   </section>
-
+  <section><ProductCardSectionBest /></section>
   <section>
     <Genre />
   </section>
@@ -176,9 +177,6 @@ import Genre from "./Genre.astro";
     }
   }
 
-  section {
-    padding-inline: var(--globalPaddingL);
-  }
   article {
     padding: 10px;
   }

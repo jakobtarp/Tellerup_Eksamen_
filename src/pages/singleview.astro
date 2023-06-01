@@ -10,7 +10,7 @@ keywords: "singleview, bog, vare";
 
 <MainLayout title="Større end os">
   <!-- Brødskrummer -->
-  <section>
+  <section class="brodkrummer">
     <Brodkrummer andre_side="Kategori" andre_pil="❯" tredje_side="Genre" tredje_pil="❯" fjerde_side="Bøger" fjerde_pil="❯" femte_side="Større end os" />
   </section>
   <section class="box">
@@ -32,9 +32,14 @@ keywords: "singleview, bog, vare";
       role="img"
     />
   </section>
+  <section></section>
 </MainLayout>
 
 <style>
+  .brodkrummer {
+    padding-inline: var(--globalPaddingL);
+  }
+
   @media (min-width: 300px) {
     .box {
       padding-inline: 30px;
