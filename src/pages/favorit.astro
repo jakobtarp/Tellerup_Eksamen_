@@ -2,7 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/MainHeader.astro";
 import FavoritItem from "../components/FavoritItem.astro";
-
+import Brodkrummer from "../components/Brodkrummer.astro";
 import "../styles/global.css";
 import "../styles/tokens.css";
 
@@ -13,6 +13,12 @@ keywords: "favoritter";
 
 <MainLayout title="Favoritter">
   <MainHeader title="Favoritter" aria-label="favoritter" />
+
+  <!-- Brødskrummer -->
+  <section>
+    <Brodkrummer andre_side="Kategorier" andre_pil="❯" tredje_side="Favorit" />
+  </section>
+
   <section>
     <div class="overskrift">
       <h3 aria-label="vare">Vare</h3>
@@ -28,7 +34,7 @@ keywords: "favoritter";
 </MainLayout>
 <style>
   section {
-    margin-inline: var(--globalPaddingL);
+    padding-inline: var(--globalPaddingL);
   }
 
   .overskrift {

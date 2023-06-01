@@ -2,7 +2,7 @@
 import Button from "../components/Button.astro";
 ---
 
-<div>
+<section>
   <div class="headerGenre">
     <h2>De mest populære genre</h2>
     <Button link="genre.html" variant="tertiary" style="red" aria-label="Se alle genrer">Se alle genrer</Button>
@@ -16,25 +16,25 @@ import Button from "../components/Button.astro";
     <a href="kategori.html" aria-label="Gå til kategorier" class="box white" style="background-color: var(--royalblue)"><h3>SCI-FY</h3></a>
     <a href="kategori.html" aria-label="Gå til kategorier" class="box" style="background-color: var(--darkvanilla)"><h3>FANTASY</h3></a>
   </div>
-</div>
+</section>
 <style>
   .containerGenre {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .headerGenre {
     display: flex;
     justify-content: space-between;
     /* margin: 8px; */
-    margin-left: 9px;
-    margin-right: 9px;
+
     margin-bottom: 10px;
   }
   .box {
     flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
+
     height: 200px;
     display: flex;
     align-items: center;
