@@ -71,29 +71,16 @@ keywords: "kurv";
   section {
     padding-inline: var(--globalPaddingL);
   }
-  .brødskrummer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-block: 15px;
-  }
 
-  .arrow {
-    color: var(--ctaColorRed);
-    font-size: 14px;
-  }
   .overskrift {
     display: flex;
     justify-content: space-between;
-    padding-inline: 50px;
+
     padding-block: 20px;
-    margin-top: 80px;
   }
 
   .stroke {
     border: 0.3px solid black;
-    margin-inline: 20px;
   }
 
   .side {
@@ -152,6 +139,18 @@ keywords: "kurv";
     }
     .quantity {
       padding-left: 0;
+      justify-content: center;
+    }
+    .cart-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .coupon {
       justify-content: center;
     }
   }
