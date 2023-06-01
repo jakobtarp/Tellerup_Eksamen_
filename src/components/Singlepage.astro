@@ -8,15 +8,15 @@ import Genre from "./Genre.astro";
 
 <section>
   <article class="brødskrummer">
-    <Button link="/index.html" variant="tertiary" style="red" aria-label="Tellerup">Tellerup</Button>
+    <Button link="/index.html" variant="tertiary" style="red">Tellerup</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Kategorier">Kategorier</Button>
+    <Button link="/kategoriside.html" variant="tertiary" style="red">Kategorier</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Genre">Genre</Button>
+    <Button link="/kategoriside.html" variant="tertiary" style="red">Genre</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Bøger">Bøger</Button>
+    <Button link="/kategoriside.html" variant="tertiary" style="red">Bøger</Button>
     <div class="arrow">&#10095;</div>
-    <Button link="kategoriside.html" variant="tertiary" style="red" aria-label="Større end os bog">Større end os</Button>
+    <Button link="kategoriside.html" variant="tertiary" style="red">Større end os</Button>
   </article>
 </section>
 <section class="indhold">
@@ -31,43 +31,43 @@ import Genre from "./Genre.astro";
         <h1>{title}</h1>
       </div>
       <figure class="heart">
-        <img src="/heart.svg" width="30px" aria-label="Hjerte" />
+        <img src="/heart.svg" width="30px" />
       </figure>
     </div>
     <div class="forfattare">
       <p>Af</p>
-      <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Forfatter Christina Bonde">Christina Bonde</Button>
+      <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
     </div>
     <!-- Resumé -->
-    <h2 aria-label="resume">Resumé:</h2>
-    <p>{resume} <Button link="#resume" variant="tertiary" style="black" aria-label="Læs mere">Læs mere</Button></p>
+    <h2>Resumé:</h2>
+    <p>{resume} <Button link="#resume" variant="tertiary" style="black">Læs mere</Button></p>
     <!-- Format -->
 
     <!-- Format -->
     <div>
-      <h2 aria-label="vælg format">Vælg format:</h2>
+      <h2>Vælg format:</h2>
       <div class="formater">
         <div class="box border_active">
           <div></div>
           <div class="info_format">
-            <img src="/indbunden.webp" alt="book" width="35px" role="img" aria-label="book" />
+            <img src="/indbunden.webp" alt="book" width="35px" role="img" />
             <div class="title_format">
-              <p aria-label="indbunden">Indbunden</p>
+              <p>Indbunden</p>
               <p><strong>{pris_indbunden} DKK</strong></p>
             </div>
             <p><s>{tidligere_pris_indbunden}</s></p>
           </div>
           <div class="check_active">
-            <img class="red_check" src="/check.webp" alt="check" role="img" aria-label="book" />
+            <img class="red_check" src="/check.webp" alt="check" role="img" />
           </div>
         </div>
 
         <div class="box">
           <div></div>
           <div class="info_format">
-            <img src="/ebog.webp" alt="book" width="25px" role="img" aria-label="book" />
+            <img src="/ebog.webp" alt="book" width="25px" role="img" />
             <div class="title_format">
-              <h3 aria-label="e-bog">E-bog</h3>
+              <h3>E-bog</h3>
               <h3><strong>{pris_ebog} DKK</strong></h3>
             </div>
             <p><s>{tidligere_pris_ebog}</s></p>
@@ -80,9 +80,9 @@ import Genre from "./Genre.astro";
         <div class="box">
           <div></div>
           <div class="info_format">
-            <img src="/lydbog.webp" alt="book" width="35px" role="img" aria-label="book" />
+            <img src="/lydbog.webp" alt="book" width="35px" role="img" />
             <div class="title_format">
-              <h3 aria-label="lydbog">Lydbog</h3>
+              <h3>Lydbog</h3>
               <h3><strong>{pris_lydbog} DKK</strong></h3>
             </div>
             <p><s>{tidligere_pris_lydbog}</s></p>
