@@ -1,0 +1,33 @@
+---
+const { andre_side, andre_pil, tredje_side, tredje_pil, fjerde_side, fjerde_pil, femte_side } = Astro.props;
+import Button from "./Button.astro";
+---
+
+<section>
+  <article class="brødskrummer">
+    <Button link="/index.html" variant="tertiary" style="red" aria-label="Tellerup">Tellerup</Button>
+    <div class="arrow">&#10094;</div>
+    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Kategorier">{andre_side}</Button>
+    <div class="arrow">{andre_pil}</div>
+    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Genre">{tredje_side}</Button>
+    <div class="arrow">{tredje_pil}</div>
+    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Bøger">{fjerde_side}</Button>
+    <div class="arrow">{fjerde_pil};</div>
+    <Button link="kategoriside.html" variant="tertiary" style="red" aria-label="Større end os bog">{femte_side}</Button>
+  </article>
+</section>
+
+<style>
+  .brødskrummer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-block: 15px;
+  }
+
+  .arrow {
+    color: var(--ctaColorRed);
+    font-size: var(--font-size-sm: 14px;);
+  }
+</style>

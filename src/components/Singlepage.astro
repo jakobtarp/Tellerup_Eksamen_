@@ -6,19 +6,6 @@ import Button from "./Button.astro";
 import Genre from "./Genre.astro";
 ---
 
-<section>
-  <article class="brødskrummer">
-    <Button link="/index.html" variant="tertiary" style="red" aria-label="Tellerup">Tellerup</Button>
-    <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Kategorier">Kategorier</Button>
-    <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Genre">Genre</Button>
-    <div class="arrow">&#10095;</div>
-    <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Bøger">Bøger</Button>
-    <div class="arrow">&#10095;</div>
-    <Button link="kategoriside.html" variant="tertiary" style="red" aria-label="Større end os bog">Større end os</Button>
-  </article>
-</section>
 <section class="indhold">
   <!-- Billede -->
   <article class="billede_container">
@@ -184,21 +171,13 @@ import Genre from "./Genre.astro";
     }
   }
 
+  section {
+    padding-inline: var(--globalPaddingL);
+  }
   article {
     padding: 10px;
   }
-  .brødskrummer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-block: 15px;
-  }
 
-  .arrow {
-    color: var(--ctaColorRed);
-    font-size: 14px;
-  }
   .billede_container {
     justify-content: center;
     align-items: center;

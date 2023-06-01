@@ -32,7 +32,7 @@ keywords: "Tellerup, forside, hjem";
   </section>
   <!-- fragt section -->
   <section class="fragtContainer">
-    <h4 aria-hidden="true">Fragt informationer</h4>
+    <h4 class="screen-reader-only" aria-hidden="true">Fragt informationer</h4>
     <div class="fragt">
       <figure>
         <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" role="img" aria-label="delivery img" />
@@ -102,6 +102,10 @@ keywords: "Tellerup, forside, hjem";
   </section>
 </MainLayout>
 <style>
+  section {
+    margin-inline: var(--globalPaddingL);
+  }
+
   .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -164,7 +168,7 @@ keywords: "Tellerup, forside, hjem";
     padding-bottom: 30px;
     gap: 30px;
     max-width: 100%;
-    margin: 90px 3.5% 90px 3.5%;
+    margin-block: 90px;
   }
   .singleSection .single {
     display: flex;
@@ -244,7 +248,7 @@ keywords: "Tellerup, forside, hjem";
       max-width: 100%;
       position: relative;
       gap: 30px;
-      margin: 90px 3.5% 90px 3.5%;
+      margin-block: 90px;
     }
 
     .singleSection .single {
@@ -299,7 +303,8 @@ keywords: "Tellerup, forside, hjem";
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 90px 3.5% 90px 3.5%;
+    margin-block: 90px;
+
     /* justify-content: center; */
   }
   .dubleviewContainer .box {
@@ -343,11 +348,11 @@ keywords: "Tellerup, forside, hjem";
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 90px 3% 90px 3%;
+    margin-block: 90px;
   }
 
   /* Genresection */
   .genreSection {
-    margin: 90px 3% 90px 3%;
+    margin-top: 90px;
   }
 </style>

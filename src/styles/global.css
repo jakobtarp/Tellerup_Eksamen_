@@ -62,10 +62,15 @@ body {
   --globalPaddingXs: 10px;
   --globalPaddingSm: 15px;
   --globalPaddingMd: 20px;
-  --globalPaddingL: 30px;
+
   --globalPaddingXl: 35px;
 
-  --globalPaddingL: 30px;
+  /* spacing-inline, hele siden */
+  --globalPaddingL: 10%;
+  /* spacing-buttom, inden footer */
+  --globalPaddingFooter: 100px;
+  /* spacing-top, inden indhold */
+  --globalPaddingIndhold: 30px;
 
   /** Shadow */
   --box-shadow: 0px 4px 10px 0 rgba(113, 113, 113, 0.5);

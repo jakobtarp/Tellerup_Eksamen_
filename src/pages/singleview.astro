@@ -1,15 +1,18 @@
 ---
 import Singlepage from "../components/Singlepage.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import Brodkrummer from "../components/Brodkrummer.astro";
 
-meta:
-title: 'singleview'
-description: 'informationer om bog'
-keywords: 'singleview, bog, vare'
-
+meta: title: "singleview";
+description: "informationer om bog";
+keywords: "singleview, bog, vare";
 ---
 
-<MainLayout title="Cart">
+<MainLayout title="Større end os">
+  <!-- Brødskrummer -->
+  <section>
+    <Brodkrummer andre_side="Kategori" andre_pil="❮" tredje_side="Genre" tredje_pil="❮" fjerde_side="Bøger" fjerde_pil="❮" femte_side="Større end os" />
+  </section>
   <section class="box">
     <Singlepage
       type="Roman"
@@ -26,7 +29,7 @@ keywords: 'singleview, bog, vare'
       udgave="1"
       EAN="9788758838632"
       levering="1-2"
-      role="img" 
+      role="img"
       aria-label="spillets forbandelse book"
     />
   </section>

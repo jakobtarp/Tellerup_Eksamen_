@@ -1,9 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHeader from "../components/MainHeader.astro";
-
+import Button from "../components/Button.astro";
 import "../styles/global.css";
 import "../styles/tokens.css";
+import Brodkrummer from "../components/Brodkrummer.astro";
 
 meta: title: "genre";
 description: "alle genre";
@@ -12,6 +13,10 @@ keywords: "genre";
 
 <MainLayout title="Genrer">
   <MainHeader title="Genrer" aria-label="genrer" />
+
+  <section>
+    <Brodkrummer andre_side="Kategorier" andre_pil="❯" tredje_side="Genre" />
+  </section>
   <section class="genre-section">
     <div class="genre-grid">
       <div class="genre-box cursor-pointer" style="background-color: var(--darkvanilla);"><a href="/kategoriside.html" aria-label="børnebøger"><div>BØRNEBØGER</div></a></div>
@@ -35,12 +40,12 @@ keywords: "genre";
   }
   @media (min-width: 300px) {
     .genre-section {
-      padding: 30px;
+      padding-inline: var(--globalPaddingL);
     }
   }
   @media (min-width: 400px) {
     .genre-section {
-      padding-block: 70px;
+      padding-top: 70px;
     }
   }
   .genre-grid {
