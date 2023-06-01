@@ -19,89 +19,96 @@ keywords: "Tellerup, forside, hjem";
   <!-- <Cookies/> -->
 
   <!-- Hero section -->
-  <section class="hero">
-    <article class="heroArticle1">
-      <div>
-        <h1>Tellerups univers, <br /> fyldt med gode historier!</h1>
-        <Button link="/kategoriside.html" variant="primary" size="base" style="white">Se vores udvalg</Button>
-      </div>
-    </article>
-    <div class="heroArticle2">
-      <img src="/books.webp" alt="books" role="img" />
-    </div>
-  </section>
-  <!-- fragt section -->
-  <section class="fragtContainer">
-    <h4 class="visually-hidden">Fragt informationer</h4>
-    <div class="fragt">
-      <figure>
-        <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" role="img" />
-      </figure>
-      <figure>
-        <Fragt icon="/delivery-truck.webp" title="Hurtig fragt" text="1-3 dages levering" class="h-10" role="img" />
-      </figure>
-      <figure>
-        <Fragt icon="/fast-delivery.webp" title="Fri fragt" text="Ved køb over 300 DKK leverer vi gratis til din hoveddør" role="img" />
-      </figure>
-      <figure>
-        <Fragt icon="/book.webp" title="Retur nemt" text="Forkert valg? Returner nemt og gratis" role="img" />
-      </figure>
-    </div>
-  </section>
-  <!-- single section -->
-  <section class="singleSection">
-    <Label variant="false" />
-    <div class="single mx-auto">
-      <div class="containerImg">
-        <img src="/single.webp" alt="book spillets forbandelse" role="img" />
-      </div>
-      <article class="">
-        <div class="singleTextContainer">
-          <h1>“Større end os” <br /> af Christina Bonde</h1>
-          <h2>Udkommer den 1. Juli 2023.</h2>
-          <h3>Resumé</h3>
-          <p>Chaol og Nesryn er rejst til det sydlige kontinent med to mål for øje: At helbrede Chaolog bringe en styrke med tilbage. Det skal dog vise sig at blive sværere end forventet, for khaganen, det sydlige kontinents mægtige leder, er i sorg og ønsker ikke at træffe en beslutning her og nu. Da en healer bliver myrdet under mystiske omstændigheder, frygter Chaol og Nesrynat Valkerne er fulgt efter dem til syden.</p>
-        </div>
-        <div class="singleBottom">
-          <h2>320 DKK</h2>
-          <Button link="/index.html" variant="primary" size="big" style="white">Forudbestil her</Button>
+  <section class="hele_siden">
+    <section class="hero">
+      <article class="heroArticle1">
+        <div>
+          <h1>Tellerups univers, <br /> fyldt med gode historier!</h1>
+          <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="Se vores udvalg">Se vores udvalg</Button>
         </div>
       </article>
-      <span>
-        <img src="/big_badge.webp" alt="new book" role="img"/>
-      </span>
-    </div>
-  </section>
-  <!-- dubleview -->
-  <section class="dubleviewContainer">
-    <div class="box">
-      <div class="boxImage">
-        <img class="w-52 ml-auto" src="/e-phone.webp" alt="discount" role="img" />
+      <div class="heroArticle2">
+        <img src="/books.webp" alt="books" role="img" aria-label="books icon" />
       </div>
-      <div class="boxContent">
-        <h3>Tag en lydbog med på ferien</h3>
-        <Button link="/kategoriside.html" variant="primary" size="base" style="white">Se vores udvalg</Button>
+    </section>
+    <!-- fragt section -->
+    <section class="fragtContainer">
+      <h4 class="screen-reader-only" aria-hidden="true">Fragt informationer</h4>
+      <div class="fragt">
+        <figure>
+          <Fragt icon="/book.webp" title="Stort udvalg af bøger" text="Vælg blandt vores mange spændene genrer" role="img" aria-label="delivery img" />
+        </figure>
+        <figure>
+          <Fragt icon="/delivery-truck.webp" title="Hurtig fragt" text="1-3 dages levering" class="h-10" role="img" aria-label="delivery icon" />
+        </figure>
+        <figure>
+          <Fragt icon="/fast-delivery.webp" title="Fri fragt" text="Ved køb over 300 DKK leverer vi gratis til din hoveddør" role="img" aria-label="delivery icon" />
+        </figure>
+        <figure>
+          <Fragt icon="/book.webp" title="Retur nemt" text="Forkert valg? Returner nemt og gratis" role="img" aria-label="delivery icon" />
+        </figure>
       </div>
-    </div>
-    <div class="box relative" style="background-color: var(--darkvanilla);">
-      <div class="boxImage">
-        <img src="/landing_tilbud.webp" alt="discount label" role="img" />
+    </section>
+    <!-- single section -->
+    <section class="singleSection">
+      <Label variant="false" />
+      <div class="single mx-auto">
+        <div class="containerImg">
+          <img src="/single.webp" alt="book spillets forbandelse" role="img" aria-label="spillets forbandelse book" />
+        </div>
+        <article class="">
+          <div class="singleTextContainer">
+            <h1>“Større end os” <br /> af Christina Bonde</h1>
+            <h2>Udkommer den 1. Juli 2023.</h2>
+            <h3>Resumé</h3>
+            <p>Chaol og Nesryn er rejst til det sydlige kontinent med to mål for øje: At helbrede Chaolog bringe en styrke med tilbage. Det skal dog vise sig at blive sværere end forventet, for khaganen, det sydlige kontinents mægtige leder, er i sorg og ønsker ikke at træffe en beslutning her og nu. Da en healer bliver myrdet under mystiske omstændigheder, frygter Chaol og Nesrynat Valkerne er fulgt efter dem til syden.</p>
+          </div>
+          <div class="singleBottom">
+            <h2>320 DKK</h2>
+            <Button link="/index.html" variant="primary" size="big" style="white" aria-label="Forudbestil her">Forudbestil her</Button>
+          </div>
+        </article>
+        <span>
+          <img src="/big_badge.webp" alt="new book" role="img" aria-label="new book" />
+        </span>
       </div>
-      <div class="boxContent">
-        <img class="lg:w-24 w-20 absolute -top-5 -right-5" src="/discount.webp" alt="discount" />
-        <h3>Bøger behøves ikke <br /> at koste alverden</h3>
-        <Button link="/kategoriside.html" variant="primary" size="base" style="white">Se vores tilbud</Button>
+    </section>
+    <!-- dubleview -->
+    <section class="dubleviewContainer">
+      <div class="box">
+        <div class="boxImage">
+          <img class="w-52 ml-auto" src="/e-phone.webp" alt="discount" role="img" aria-label="discount label" />
+        </div>
+        <div class="boxContent">
+          <h3>Tag en lydbog med på ferien</h3>
+          <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="Se vores tilbud">Se vores udvalg</Button>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="bestseller">
-    <ProductCardSectionBest />
-  </section>
-  <section class="genreSection">
-    <Genre />
+      <div class="box relative" style="background-color: var(--darkvanilla);">
+        <div class="boxImage">
+          <img src="/landing_tilbud.webp" alt="discount label" role="img" aria-label="discount label" />
+        </div>
+        <div class="boxContent">
+          <img class="lg:w-24 w-20 absolute -top-5 -right-5" src="/discount.webp" alt="" />
+          <h3>Bøger behøves ikke <br /> at koste alverden</h3>
+          <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="discount">Se vores tilbud</Button>
+        </div>
+      </div>
+    </section>
+    <section class="bestseller">
+      <ProductCardSectionBest />
+    </section>
+    <section class="genreSection">
+      <Genre />
+    </section>
   </section>
 </MainLayout>
 <style>
+  section {
+    display: grid;
+    gap: 50px;
+  }
+
   .genreSection,
   .dubleviewContainer,
   .singleSection,
@@ -147,21 +154,21 @@ keywords: "Tellerup, forside, hjem";
   }
   /* Section 2 */
   .visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
   .fragtContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 80px auto 80px auto;
+    margin: auto;
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -181,7 +188,6 @@ keywords: "Tellerup, forside, hjem";
     padding-bottom: 30px;
     gap: 30px;
     max-width: 100%;
-    margin-block: 90px;
   }
   .singleSection .single {
     display: flex;
@@ -209,7 +215,6 @@ keywords: "Tellerup, forside, hjem";
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10%;
   }
 
   .singleSection .single article .singleTextContainer {
@@ -254,6 +259,10 @@ keywords: "Tellerup, forside, hjem";
   }
 
   @media only screen and (min-width: 900px) {
+    section {
+      gap: 90px;
+    }
+
     .singleSection {
       display: flex;
       flex-direction: row;
@@ -261,7 +270,6 @@ keywords: "Tellerup, forside, hjem";
       max-width: 100%;
       position: relative;
       gap: 30px;
-      margin-block: 90px;
     }
 
     .singleSection .single {
@@ -316,7 +324,6 @@ keywords: "Tellerup, forside, hjem";
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-block: 90px;
 
     /* justify-content: center; */
   }
@@ -357,18 +364,6 @@ keywords: "Tellerup, forside, hjem";
     }
   }
   /*********************** Section 6 ******************/
-<<<<<<< HEAD
-  .carusselSection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-block: 90px;
-  }
-=======
->>>>>>> Jakob
 
   /* Genresection */
-  .genreSection {
-    margin-top: 90px;
-  }
 </style>
