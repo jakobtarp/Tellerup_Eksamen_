@@ -18,7 +18,7 @@ import Genre from "../components/Genre.astro";
     <div class="">
       <div class="flex justify-end mt-16 mb-5 cursor-pointer sort">
         <p class="underline text-end" aria-label="Sorter fra a-z">Sorter fra A-Z</p>
-        <img class="h-6 ml-2 my-auto" src="/downarrow.webp" alt="down arrow" role="img" aria-label="down arrow"/>
+        <img class="h-6 ml-2 my-auto" src="/downarrow.webp" alt="down arrow" role="img" aria-label="down arrow" />
       </div>
 
       <div class="flex justify-end search_resul">
@@ -240,6 +240,8 @@ import Genre from "../components/Genre.astro";
   mobileDropDown.addEventListener("click", () => {
     products.classList.toggle("blurBg");
   });
+
+  console.log(openDropdown);
 
   console.log();
 
