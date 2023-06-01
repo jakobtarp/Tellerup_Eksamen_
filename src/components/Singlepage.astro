@@ -150,8 +150,14 @@ import ProductCardSectionBest from "../components/ProductCardSectionBest.astro";
 <style>
   .hele_side {
     display: grid;
-    gap: 90px;
+    gap: 50px;
   }
+  @media only screen and (min-width: 900px) {
+    .hele_side {
+      gap: 90px;
+    }
+  }
+
   h1 {
     margin-block: 20px;
   }
