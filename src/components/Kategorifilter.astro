@@ -12,17 +12,17 @@ import Genre from "../components/Genre.astro";
 <div class="box-section px-2 lg:px-8">
   <div class="grid grid-cols-2 lg:block">
     <div id="mobiledown" class="mobile-down lg:hidden my-auto px-2">
-      <Button variant="primary" size="base" style="white" aria-haspopup="true" aria-label="Filtrer">Filtrer</Button>
+      <Button variant="primary" size="base" style="white">Filtrer</Button>
     </div>
 
     <div class="">
       <div class="flex justify-end mt-16 mb-5 cursor-pointer sort">
-        <p class="underline text-end" aria-label="Sorter fra a-z">Sorter fra A-Z</p>
-        <img class="h-6 ml-2 my-auto" src="/downarrow.webp" alt="down arrow" role="img" aria-label="down arrow" />
+        <p class="underline text-end">Sorter fra A-Z</p>
+        <img class="h-6 ml-2 my-auto" src="/downarrow.webp" alt="down arrow" role="img" />
       </div>
 
       <div class="flex justify-end search_resul">
-        <p class="text-end" aria-label="søgeresultater funder"><span class="font-bold">(8)</span> søgeresultater fundet</p>
+        <p class="text-end"><span class="font-bold">(8)</span> søgeresultater fundet</p>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@ import Genre from "../components/Genre.astro";
     <div class="transcontainer">
       <div class="dropdown-container">
         <div>
-          <button class="dropdown-button" aria-haspopup="true" aria-label="Kategorier">Kategorier</button>
+          <button class="dropdown-button">Kategorier</button>
           <div class="dropdown">
             <input class="mb-3 mt-4 ml-2" type="text" class="dropdown-search" placeholder="Søg..." />
             <div class="dropdown-content">
@@ -47,7 +47,7 @@ import Genre from "../components/Genre.astro";
           </div>
         </div>
         <div>
-          <button class="dropdown-button" aria-haspopup="true" aria-label="Forfattere">Forfattere</button>
+          <button class="dropdown-button">Forfattere</button>
           <div class="dropdown">
             <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
             <div class="dropdown-content cursor-pointer">
@@ -58,12 +58,12 @@ import Genre from "../components/Genre.astro";
               <label><input class="mt-4" type="checkbox" name="option4" />Louise Hailberg</label><br />
               <label><input class="mt-4 mb-4" type="checkbox" name="option5" />Kristoffer J. Andersen</label><br />
               <br />
-              <button class="underline font-bold" aria-haspopup="true">Se alle</button>
+              <button class="underline font-bold">Se alle</button>
             </div>
           </div>
         </div>
         <div>
-          <button class="dropdown-button" aria-haspopup="true" aria-label="Tags">Tags</button>
+          <button class="dropdown-button">Tags</button>
           <div class="dropdown">
             <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
             <div class="dropdown-content cursor-pointer">
@@ -77,7 +77,7 @@ import Genre from "../components/Genre.astro";
           </div>
         </div>
         <div>
-          <button class="dropdown-button" aria-haspopup="true" aria-label="Aldersgruppe">Aldersgruppe</button>
+          <button class="dropdown-button">Aldersgruppe</button>
           <div class="dropdown">
             <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
             <div class="dropdown-content cursor-pointer">
@@ -90,7 +90,7 @@ import Genre from "../components/Genre.astro";
           </div>
         </div>
         <div>
-          <button class="dropdown-button" aria-haspopup="true" aria-label="Format">Format</button>
+          <button class="dropdown-button">Format</button>
           <div class="dropdown">
             <input class="mb-2 ml-2 mt-4" type="text" class="dropdown-search" placeholder="Søg..." />
             <div class="dropdown-content cursor-pointer">
@@ -101,19 +101,19 @@ import Genre from "../components/Genre.astro";
           </div>
         </div>
         <div class="bg-white h-16 py-5 lg:ml-10 mx-3">
-          <Button link="/kategoriside.html" variant="primary" size="base" style="white" aria-label="Ryd alle">Ryd alle</Button>
+          <Button link="/kategoriside.html" variant="primary" size="base" style="white">Ryd alle</Button>
         </div>
       </div>
     </div>
   </div>
 
   <div>
-    <p class="page text-center sider mt-10 lg:ml-64" aria-label="Viser sider">Viser 1 ud af 4 sider</p>
+    <p class="page text-center sider mt-10 lg:ml-64">Viser 1 ud af 4 sider</p>
   </div>
 
   <div class="nextbefore flex justify-around lg:ml-64 next mt-5 mb-10">
-    <p class="underline cursor-pointer" aria-label="forrige side">Forrige side</p>
-    <p class="underline cursor-pointer" aria-label="næste side">Næste side</p>
+    <p class="underline cursor-pointer">Forrige side</p>
+    <p class="underline cursor-pointer">Næste side</p>
   </div>
 </div>
 

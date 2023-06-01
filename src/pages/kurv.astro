@@ -13,7 +13,7 @@ keywords: "kurv";
 ---
 
 <MainLayout title="Cart">
-  <MainHeader title="Kurv" aria-label="kurv" />
+  <MainHeader title="Kurv" />
   <!-- Brødskrummer -->
   <section>
     <Brodkrummer andre_side="Kurv" />
@@ -21,25 +21,25 @@ keywords: "kurv";
 
   <section>
     <div class="overskrift">
-      <h3 aria-label="vare">Vare</h3>
-      <h3 aria-label="information">Information</h3>
-      <h3 aria-label="antal">Antal</h3>
-      <h3 aria-label="pris">Pris</h3>
+      <h3>Vare</h3>
+      <h3>Information</h3>
+      <h3>Antal</h3>
+      <h3>Pris</h3>
     </div>
     <div class="stroke"></div>
     <KurvItem img="/single.webp" title="Spillets forbandelse" author="Kristoffer J. Andersen" format="Indbundet" delivery="1-3 hverdage" price="330 kr." role="img" aria-label="spillets forbandelse book">
       <div class="quantity">
-        <button class="minus" aria-label="Minus">-</button>
+        <button class="minus">-</button>
         <input type="text" class="count" value="1" />
-        <button class="plus" aria-label="Plus">+</button>
+        <button class="plus">+</button>
       </div>
     </KurvItem>
     <div class="stroke"></div>
     <KurvItem img="/single.webp" title="Spillets forbandelse" author="Kristoffer J. Andersen" format="Indbundet" delivery="1-3 hverdage" price="330 kr." role="img" aria-label="spillets forbandelse book">
       <div class="quantity">
-        <button class="minus" aria-label="Minus">-</button>
+        <button class="minus">-</button>
         <input type="text" class="count" value="1" />
-        <button class="plus" aria-label="Plus">+</button>
+        <button class="plus">+</button>
       </div>
     </KurvItem>
     <div class="stroke"></div>
@@ -47,24 +47,24 @@ keywords: "kurv";
   <section class="section-price-row">
     <div class="price-row">
       <div>
-        <h2 aria-label="levering">Levering</h2>
-        <h4 aria-label="gratis fragt">Gratis fragt</h4>
-        <h4 aria-label="forventet levering 22-6-2023">Forventet levering 22-06-2023</h4>
+        <h2>Levering</h2>
+        <h4>Gratis fragt</h4>
+        <h4>Forventet levering 22-06-2023</h4>
       </div>
       <div class="">
-        <h2 aria-label="total inklusivt moms">Total inkl. moms</h2>
-        <h1 aria-label="1204 kroner">1204 DKK</h1>
+        <h2>Total inkl. moms</h2>
+        <h1>1204 DKK</h1>
       </div>
     </div>
     <div class="cart-row mt-10">
-      <Button link="/kategoriside.html" variant="secondary" size="big" style="red" aria-label="Fortsæt med at handle">Fortsæt med at handle</Button>
-      <Button link="/kurv.html" variant="primary" size="big" style="white" aria-label="Gå til betaling">Gå til betaling</Button>
+      <Button link="/kategoriside.html" variant="secondary" size="big" style="red">Fortsæt med at handle</Button>
+      <Button link="/kurv.html" variant="primary" size="big" style="white">Gå til betaling</Button>
     </div>
     <div class="coupon">
-      <Button link="/kurv.html" variant="ghost" style="green" aria-label="Har du en kuponkode?">Har du en kuponkode?</Button>
+      <Button link="/kurv.html" variant="ghost" style="green">Har du en kuponkode?</Button>
     </div>
   </section>
-  <p class="side" aria-label="antal sider">2 - 2 (af 2 produkter)</p>
+  <p class="side">2 - 2 (af 2 produkter)</p>
 </MainLayout>
 
 <style>
