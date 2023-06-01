@@ -6,146 +6,151 @@ import Button from "./Button.astro";
 import Genre from "./Genre.astro";
 ---
 
-<section class="indhold">
-  <!-- Billede -->
-  <article class="billede_container">
-    <img class="billede" src={img} alt="produktbillede" height="350" width="350" />
-  </article>
-  <article>
-    <div class="header">
+<section class="hele_side">
+  <section class="indhold">
+    <!-- Billede -->
+    <article class="billede_container">
+      <img class="billede" src={img} alt="produktbillede" height="350" width="350" />
+    </article>
+    <article>
+      <div class="header">
+        <div>
+          <h3 class="type">{type}</h3>
+          <h1>{title}</h1>
+        </div>
+        <figure class="heart">
+          <img src="/heart.svg" width="30px" />
+        </figure>
+      </div>
+      <div class="forfattare">
+        <p>Af</p>
+        <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
+      </div>
+      <!-- Resumé -->
+      <h2>Resumé:</h2>
+      <p>{resume} <Button link="#resume" variant="tertiary" style="black">Læs mere</Button></p>
+      <!-- Format -->
+
+      <!-- Format -->
       <div>
-        <h3 class="type">{type}</h3>
-        <h1>{title}</h1>
-      </div>
-      <figure class="heart">
-        <img src="/heart.svg" width="30px" />
-      </figure>
-    </div>
-    <div class="forfattare">
-      <p>Af</p>
-      <Button link="/kategoriside.html" variant="tertiary" style="red">Christina Bonde</Button>
-    </div>
-    <!-- Resumé -->
-    <h2>Resumé:</h2>
-    <p>{resume} <Button link="#resume" variant="tertiary" style="black">Læs mere</Button></p>
-    <!-- Format -->
-
-    <!-- Format -->
-    <div>
-      <h2>Vælg format:</h2>
-      <div class="formater">
-        <div class="box border_active">
-          <div></div>
-          <div class="info_format">
-            <img src="/indbunden.webp" alt="book" width="35px" role="img" />
-            <div class="title_format">
-              <p>Indbunden</p>
-              <p><strong>{pris_indbunden} DKK</strong></p>
+        <h2>Vælg format:</h2>
+        <div class="formater">
+          <div class="box border_active">
+            <div></div>
+            <div class="info_format">
+              <img src="/indbunden.webp" alt="book" width="35px" role="img" />
+              <div class="title_format">
+                <p>Indbunden</p>
+                <p><strong>{pris_indbunden} DKK</strong></p>
+              </div>
+              <p><s>{tidligere_pris_indbunden}</s></p>
             </div>
-            <p><s>{tidligere_pris_indbunden}</s></p>
-          </div>
-          <div class="check_active">
-            <img class="red_check" src="/check.webp" alt="check" role="img" />
-          </div>
-        </div>
-
-        <div class="box">
-          <div></div>
-          <div class="info_format">
-            <img src="/ebog.webp" alt="book" width="25px" role="img" />
-            <div class="title_format">
-              <h3>E-bog</h3>
-              <h3><strong>{pris_ebog} DKK</strong></h3>
+            <div class="check_active">
+              <img class="red_check" src="/check.webp" alt="check" role="img" />
             </div>
-            <p><s>{tidligere_pris_ebog}</s></p>
           </div>
-          <div class="check">
-            <!-- <img class="red_check" src="/check.webp" alt="check" /> -->
-          </div>
-        </div>
 
-        <div class="box">
-          <div></div>
-          <div class="info_format">
-            <img src="/lydbog.webp" alt="book" width="35px" role="img" />
-            <div class="title_format">
-              <h3>Lydbog</h3>
-              <h3><strong>{pris_lydbog} DKK</strong></h3>
+          <div class="box">
+            <div></div>
+            <div class="info_format">
+              <img src="/ebog.webp" alt="book" width="25px" role="img" />
+              <div class="title_format">
+                <h3>E-bog</h3>
+                <h3><strong>{pris_ebog} DKK</strong></h3>
+              </div>
+              <p><s>{tidligere_pris_ebog}</s></p>
             </div>
-            <p><s>{tidligere_pris_lydbog}</s></p>
+            <div class="check">
+              <!-- <img class="red_check" src="/check.webp" alt="check" /> -->
+            </div>
           </div>
-          <div class="check">
-            <!-- <img class="red_check" src="/check.webp" alt="check" /> -->
+
+          <div class="box">
+            <div></div>
+            <div class="info_format">
+              <img src="/lydbog.webp" alt="book" width="35px" role="img" />
+              <div class="title_format">
+                <h3>Lydbog</h3>
+                <h3><strong>{pris_lydbog} DKK</strong></h3>
+              </div>
+              <p><s>{tidligere_pris_lydbog}</s></p>
+            </div>
+            <div class="check">
+              <!-- <img class="red_check" src="/check.webp" alt="check" /> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Købknap -->
-    <div class="knapper">
-      <div class="quantity">
-        <button class="minus" aria-label="Minus">-</button>
-        <input type="text" class="count" value="1" />
-        <button class="plus" aria-label="Plus">+</button>
-      </div>
-
-      <!-- <img  src="/shopping-cart.webp" width="20px"> -->
-      <Button class="flex" link="kurv.html" variant="primary" size="big" style="white" aria-label="Læg i kurv">Læg i kurv</Button>
-      <div class="tilbage">
-        <div class="lager">
-          <div class="lager_box">
-            <img src="/check.webp" alt="check icon" role="img" aria-label="check icon" />
-          </div>
-          <p class="lager_tekst" aria-label="på lager">På lager</p>
+      <!-- Købknap -->
+      <div class="knapper">
+        <div class="quantity">
+          <button class="minus" aria-label="Minus">-</button>
+          <input type="text" class="count" value="1" />
+          <button class="plus" aria-label="Plus">+</button>
         </div>
-        <p>Afs. {levering} hverdage</p>
-      </div>
-    </div>
-  </article>
 
-  <article>
-    <div id="resume">
-      <h2 aria-label="resume">Resumé:</h2>
-      <p>{resume_lang}</p>
-    </div>
-    <div>
-      <h2 aria-label="tags">Tags</h2>
-      <div class="tags_button">
-        <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Genre fantasy">Fantasy</Button>
-        <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Genre krimi">Krimi</Button>
-        <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Romantik">Romantik</Button>
+        <!-- <img  src="/shopping-cart.webp" width="20px"> -->
+        <Button class="flex" link="kurv.html" variant="primary" size="big" style="white" aria-label="Læg i kurv">Læg i kurv</Button>
+        <div class="tilbage">
+          <div class="lager">
+            <div class="lager_box">
+              <img src="/check.webp" alt="check icon" role="img" aria-label="check icon" />
+            </div>
+            <p class="lager_tekst" aria-label="på lager">På lager</p>
+          </div>
+          <p>Afs. {levering} hverdage</p>
+        </div>
       </div>
-    </div>
-  </article>
-  <article>
-    <h2 aria-label="detaljer">Detaljer</h2>
-    <hr class="solid" />
-    <div class="detaljer_box">
-      <div class="detaljer_info">
-        <p>Af:</p>
-        <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Forfatter Christina Bonde">Christina Bonde</Button>
+    </article>
+
+    <article>
+      <div id="resume">
+        <h2 aria-label="resume">Resumé:</h2>
+        <p>{resume_lang}</p>
       </div>
-      <div class="detaljer_info">
-        <p aria-label="forlag">Forlag:</p>
-        <p>{forlag}</p>
+      <div>
+        <h2 aria-label="tags">Tags</h2>
+        <div class="tags_button">
+          <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Genre fantasy">Fantasy</Button>
+          <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Genre krimi">Krimi</Button>
+          <Button link="kategoriside.html" variant="tags" style="white" size="tags" aria-label="Romantik">Romantik</Button>
+        </div>
       </div>
-      <div class="detaljer_info">
-        <p aria-label="udgave">Udgave:</p>
-        <p>{udgave}</p>
+    </article>
+    <article>
+      <h2 aria-label="detaljer">Detaljer</h2>
+      <hr class="solid" />
+      <div class="detaljer_box">
+        <div class="detaljer_info">
+          <p>Af:</p>
+          <Button link="/kategoriside.html" variant="tertiary" style="red" aria-label="Forfatter Christina Bonde">Christina Bonde</Button>
+        </div>
+        <div class="detaljer_info">
+          <p aria-label="forlag">Forlag:</p>
+          <p>{forlag}</p>
+        </div>
+        <div class="detaljer_info">
+          <p aria-label="udgave">Udgave:</p>
+          <p>{udgave}</p>
+        </div>
+        <div class="detaljer_info">
+          <p aria-label="ean">EAN:</p>
+          <p>{EAN}</p>
+        </div>
       </div>
-      <div class="detaljer_info">
-        <p aria-label="ean">EAN:</p>
-        <p>{EAN}</p>
-      </div>
-    </div>
-  </article>
+    </article>
+  </section>
+
+  <section>
+    <Genre />
+  </section>
 </section>
-
-<section>
-  <Genre />
-</section>
-
 <style>
+  .hele_side {
+    display: grid;
+    gap: 90px;
+  }
   h1 {
     margin-block: 20px;
   }

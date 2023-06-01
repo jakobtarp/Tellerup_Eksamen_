@@ -13,30 +13,43 @@ keywords: "profil";
 <MainLayout title="profil">
   <MainHeader title="Profil" />
   <!-- Brødskrummer -->
-  <section>
+  <section class="brodkrummer">
     <Brodkrummer andre_side="Profil" />
   </section>
-
-  <section class="profil-section">
-    <h2>Hej Stefan</h2>
-    <p>Hvad kan vi gøre for dig i dag?</p>
-  </section>
-  <section class="profil-grid">
-    <article class="profil-box cursor-pointer" style="background-color: var(--lighterblue);"><a href="profil.html"><h2>Mine ordrer</h2></a></article>
-    <div class="profil-box cursor-pointer" style="background-color: var(--darkvanilla);"><a href="profil.html"><h2>Mine bøger</h2></a></div>
-    <div class="profil-box cursor-pointer" style="background-color: var(--royalblue);"><a href="profil.html"><h2 id="white">Mine oplysninger</h2></a></div>
+  <section class="">
+    <section class="profil-section">
+      <h2>Hej Stefan</h2>
+      <p>Hvad kan vi gøre for dig i dag?</p>
+    </section>
+    <section class="profil-grid">
+      <article class="profil-box cursor-pointer" style="background-color: var(--lighterblue);"><a href="profil.html"><h2>Mine ordrer</h2></a></article>
+      <div class="profil-box cursor-pointer" style="background-color: var(--darkvanilla);"><a href="profil.html"><h2>Mine bøger</h2></a></div>
+      <div class="profil-box cursor-pointer" style="background-color: var(--royalblue);"><a href="profil.html"><h2 id="white">Mine oplysninger</h2></a></div>
+    </section>
   </section>
 </MainLayout>
 <div class="stroke"></div>
 
 <style>
-  section {
+
+.brodkrummer {
+  padding-inline: var(--globalPaddingL); 
+}
+.indhold {
+    display: grid;
+    gap: 20px;
+  }
+  .profil-grid {
     padding-inline: var(--globalPaddingL);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .profil-section {
     margin-top: 20px;
     text-align: center;
+    gap: 10px;
   }
 
   .profil-box {
