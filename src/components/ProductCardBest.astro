@@ -9,7 +9,7 @@ const { titel, best, imgPath, imgPath1, imgPath2, imgPath3, imgPath4, imgPath5, 
   <a href="/singleview.html">
     <div class="grid imgcard relative">
       {newBadge && <p class="badge absolute right-0 bottom-0">NYHED</p>}
-      <hp class="best absolute lg:-right-5 lg:-top-5 rounded-full -top-4 -right-2 py-5 lg:p-5">{best}</hp>
+      <p class="best absolute lg:-right-5 lg:-top-5 rounded-full -top-4 -right-2 py-5 lg:p-5">{best}</p>
 
       <img class="imgradius mx-auto my-6 hidden lg:block" src={imgPath} alt="" height="250" width="170" />
 
@@ -93,7 +93,6 @@ const { titel, best, imgPath, imgPath1, imgPath2, imgPath3, imgPath4, imgPath5, 
     color: var(--white);
     font-size: var(--font-size-base);
     width: 70px;
-
     background-color: var(--royalblue);
     font-weight: var(--fontBold);
     text-align: center;
